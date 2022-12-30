@@ -1,0 +1,5 @@
+enum AgentTypeEnum {
+  PERSON @enum(value: 1)
+  GROUP @enum(value: 2)
+  ORGANIZATION @enum(value: 0)
+}

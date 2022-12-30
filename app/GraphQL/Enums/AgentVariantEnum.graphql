@@ -1,0 +1,14 @@
+enum AgentVariantEnum {
+  MAIDEN_NAME @enum(value: 2)
+  AUTHOR_ABBREV @enum(value: 1)
+  PREVIOUS_NAME @enum(value: 3)
+  OTHER @enum(value: 4)
+  PREFERRED_NAME @enum(value: 10)
+  ENCYCLOPEDIA_OF_AUSTRALIAN_SCIENCE_ID @enum(value: 7)
+  IPNI_AUTHOR_ID @enum(value: 5)
+  HARVARD_INDEX_OF_BOTANISTS_ID @enum(value: 6)
+  AUSTRALIAN_DICTIONARY_OF_BIOGRAPHY_ID @enum(value: 8)
+  ORCID @enum(value: 11)
+  WIKIDATA_ID @enum(value: 9)
+  ALTERNATIVE_NAME @enum(value: 12)
+}

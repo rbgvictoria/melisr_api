@@ -1,0 +1,9 @@
+enum ReferenceWorkTypeEnum {
+  TECHNICAL @enum(value: 3)
+  THESIS @enum(value: 4)
+  ARTICLE @enum(value: 2)
+  BOOKSECTION @enum(value: 5)
+  ELECTRONIC @enum(value: 1)
+  BOOK @enum(value: 0)
+  EXSICCATASERIES @enum(value: 7)
+}
