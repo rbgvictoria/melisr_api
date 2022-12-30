@@ -1,0 +1,8 @@
+input DateTimeFieldFilterInput {
+  eq: DateTime
+  lt: DateTime
+  gt: DateTime
+  lte: DateTime
+  gte: DateTime
+  between: [DateTime]
+}

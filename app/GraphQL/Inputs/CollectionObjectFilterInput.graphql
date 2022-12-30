@@ -77,12 +77,12 @@ input CollectionObjectFilterInput {
   collectionObjectProperties: CollectionObjectPropertyFilterInput
   collectionObjectCitations: CollectionObjectCitationFilterInput
   collectionObjectAttachments: CollectionObjectAttachmentFilterInput
-  collectionRelationships: CollectionRelationshipFilterInput
-  collectionRelationships: CollectionRelationshipFilterInput
+#   collectionRelationships: CollectionRelationshipFilterInput
+#   collectionRelationships: CollectionRelationshipFilterInput
   conservDescriptions: ConservDescriptionFilterInput
   dnaSequences: DnaSequenceFilterInput
   exsiccataItems: ExsiccataItemFilterInput
-  voucherRelationships: VoucherRelationshipFilterInput
+#   voucherRelationships: VoucherRelationshipFilterInput
   otherIdentifiers: OtherIdentifierFilterInput
   preparations: PreparationFilterInput
   treatmentEvents: TreatmentEventFilterInput

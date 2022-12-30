@@ -1,0 +1,5 @@
+input CreateLoanBelongsTo {
+  connect: ID
+  create: CreateLoanInput
+  update: UpdateLoanInput
+}

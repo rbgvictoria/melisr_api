@@ -1,0 +1,7 @@
+input CreateJournalInput {
+  iSSN: String
+  journalAbbreviation: String
+  journalName: String!
+  remarks: String
+  text1: String
+}

@@ -1,0 +1,13 @@
+input PreparationAttrFilterInput {
+  attrID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  doubleValue: FloatFieldFilterInput
+  strValue: StringFieldFilterInput
+  preparation: PreparationFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  attributeDef: AttributeDefFilterInput
+}

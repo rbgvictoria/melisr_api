@@ -1,0 +1,8 @@
+input IntegerFieldFilterInput {
+  eq: Int
+  lt: Int
+  gt: Int
+  lte: Int
+  gte: Int
+  between: [Int]
+}

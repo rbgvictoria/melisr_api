@@ -1,0 +1,7 @@
+input UpdateAuthorInput {
+  authorID: ID!
+  orderNumber: Int!
+  remarks: String
+  referenceWork: CreateReferenceWorkBelongsTo!
+  agent: CreateAgentBelongsTo!
+}

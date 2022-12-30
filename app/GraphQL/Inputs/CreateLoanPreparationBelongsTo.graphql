@@ -1,0 +1,5 @@
+input CreateLoanPreparationBelongsTo {
+  connect: ID
+  create: CreateLoanPreparationInput
+  update: UpdateLoanPreparationInput
+}

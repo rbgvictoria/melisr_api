@@ -1,0 +1,5 @@
+input CreateJournalBelongsTo {
+  connect: ID
+  create: CreateJournalInput
+  update: UpdateJournalInput
+}

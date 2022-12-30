@@ -1,0 +1,11 @@
+input UpdateLoanReturnPreparationInput {
+  loanReturnPreparationID: ID! @rename(attribute: "LoanReturnPreparationID")
+  quantityResolved: Int @rename(attribute: "QuantityResolved")
+  quantityReturned: Int @rename(attribute: "QuantityReturned")
+  remarks: String @rename(attribute: "Remarks")
+  returnedDate: String @rename(attribute: "ReturnedDate")
+  receivedBy: CreateAgentBelongsTo
+  loanPreparation: CreateLoanPreparationBelongsTo
+  deaccessionPreparation: CreateDeaccessionPreparationBelongsTo
+  discipline: CreateDisciplineBelongsTo
+}

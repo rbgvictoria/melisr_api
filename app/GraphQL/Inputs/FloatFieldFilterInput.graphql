@@ -1,0 +1,8 @@
+input FloatFieldFilterInput {
+  eq: Float
+  lt: Float
+  gt: Float
+  lte: Float
+  gte: Float
+  between: [Float]
+}

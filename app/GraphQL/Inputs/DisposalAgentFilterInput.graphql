@@ -1,0 +1,12 @@
+input DisposalAgentFilterInput {
+  disposalAgentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  role: StringFieldFilterInput
+  agent: AgentFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  disposal: DisposalFilterInput
+}

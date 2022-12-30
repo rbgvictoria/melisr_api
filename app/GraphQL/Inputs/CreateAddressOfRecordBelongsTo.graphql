@@ -1,0 +1,5 @@
+input CreateAddressOfRecordBelongsTo {
+  connect: ID
+  create: CreateAddressOfRecordInput
+  update: UpdateAddressOfRecordInput
+}

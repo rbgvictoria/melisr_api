@@ -30,16 +30,16 @@ input CollectionFilterInput {
   discipline: DisciplineFilterInput
   adminContact: AgentFilterInput
   institutionNetwork: InstitutionNetworkFilterInput
-  institutionNetwork: InstitutionFilterInput
-  agents: AgentFilterInput
-  agents: AgentFilterInput
-  collectionRelTypes: CollectionRelTypeFilterInput
-  collectionRelTypes: CollectionRelTypeFilterInput
-  spdatasets: SpdatasetFilterInput
+#   institutionNetwork: InstitutionFilterInput
+#   agents: AgentFilterInput
+#   agents: AgentFilterInput
+#   collectionRelTypes: CollectionRelTypeFilterInput
+#   collectionRelTypes: CollectionRelTypeFilterInput
+#   spdatasets: SpdatasetFilterInput
   fieldNotebooks: FieldNotebookFilterInput
-  spuserpolicys: SpuserpolicyFilterInput
-  pickLists: PickListFilterInput
+#   spuserpolicys: SpuserpolicyFilterInput
+#   pickLists: PickListFilterInput
   prepTypes: PrepTypeFilterInput
-  sproles: SproleFilterInput
+#   sproles: SproleFilterInput
   collectionObjects: CollectionObjectFilterInput
 }

@@ -1,0 +1,7 @@
+input CreateLoanAgentInput {
+  remarks: String @rename(attribute: "Remarks")
+  role: String = "Botanist" @rename(attribute: "Role")
+  agent: CreateAgentBelongsTo!
+  discipline: CreateDisciplineBelongsTo
+  loan: CreateLoanBelongsTo!
+}

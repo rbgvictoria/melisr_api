@@ -1,0 +1,13 @@
+input CollectionObjectAttrFilterInput {
+  attrID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  doubleValue: FloatFieldFilterInput
+  strValue: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  collectionObject: CollectionObjectFilterInput
+  createdByAgent: AgentFilterInput
+  attributeDef: AttributeDefFilterInput
+}

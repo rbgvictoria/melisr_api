@@ -1,0 +1,6 @@
+input CreateAuthorInput {
+  orderNumber: Int!
+  remarks: String
+  referenceWork: CreateReferenceWorkBelongsTo!
+  agent: CreateAgentBelongsTo!
+}

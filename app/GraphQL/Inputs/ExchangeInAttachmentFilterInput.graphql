@@ -1,0 +1,12 @@
+input ExchangeInAttachmentFilterInput {
+  exchangeInAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  exchangeIn: ExchangeInFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

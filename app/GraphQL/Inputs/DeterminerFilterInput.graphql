@@ -1,0 +1,17 @@
+input DeterminerFilterInput {
+  determinerID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  isPrimary: BooleanFieldFilterInput
+  orderNumber: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  yesNo1: BooleanFieldFilterInput
+  yesNo2: BooleanFieldFilterInput
+  agent: AgentFilterInput
+  determination: DeterminationFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+}

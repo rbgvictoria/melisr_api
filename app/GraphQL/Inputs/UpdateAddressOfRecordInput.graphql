@@ -1,0 +1,11 @@
+input UpdateAddressOfRecordInput {
+  addressOfRecordID: ID!
+  address: String
+  address2: String
+  city: String
+  country: String
+  postalCode: String
+  remarks: String
+  state: String
+  agent: CreateAgentBelongsTo
+}

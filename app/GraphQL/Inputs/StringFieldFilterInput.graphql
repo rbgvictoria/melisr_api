@@ -1,0 +1,9 @@
+input StringFieldFilterInput {
+  like: String
+  eq: String
+  contains: String
+  startsWith: String
+  in: [String!]
+  empty: Boolean
+  not: Boolean
+}

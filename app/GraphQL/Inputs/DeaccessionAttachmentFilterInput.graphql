@@ -1,0 +1,12 @@
+input DeaccessionAttachmentFilterInput {
+  deaccessionAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  deaccession: DeaccessionFilterInput
+  attachment: AttachmentFilterInput
+}

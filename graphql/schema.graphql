@@ -1,41 +1,55 @@
+#import ../app/GraphQL/Types/*.graphql
+#import ../app/GraphQL/Inputs/*.graphql
+#import ../app/GraphQL/Enums/*.graphql
+
+"A date string with format `Y-m-d`, e.g. `2011-05-23`."
+scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+
 "A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
 scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
 
-"Indicates what fields are available at the top level of a query operation."
 type Query {
-    "Find a single user by an identifying attribute."
-    user(
-      "Search by primary key."
-      id: ID @eq @rules(apply: ["prohibits:email", "required_without:email"])
+    addressOfRecord(addressOfRecordID: ID! @eq): AddressOfRecord @find
+    addressOfRecords: [AddressOfRecord!]! @paginate(type: "paginator")
 
-      "Search by email address."
-      email: String @eq @rules(apply: ["prohibits:id", "required_without:id", "email"])
-    ): User @find
+    agent(agentID: ID @eq): Agent @find
 
-    "List multiple users."
-    users(
-      "Filters by name. Accepts SQL LIKE wildcards `%` and `_`."
-      name: String @where(operator: "like")
-    ): [User!]! @paginate(defaultCount: 10)
+    collectionObjects(filter: CollectionObjectFilterInput): [CollectionObject!]! @paginate(builder: "App\\Services\\SearchService@collectionObjectSearch")
+
+    determinations(filter: DeterminationFilterInput): [Determination!]! @paginate(builder: "App\\Services\\SearchService@determinationSearch")
+
+    geography(geographyID: ID @eq): Geography @find
+
+    loan(loanID: ID! @eq): Loan @find
+    melLoans(addressOfRecord: ID): Loan @paginate(builder: "App\\Services\\SearchService@loanSearch", defaultCount: 20, scopes: ["melLoans"])
+    nonMelLoans(addressOfRecord: ID): Loan @paginate(builder: "App\\Services\\SearchService@loanSearch", defaultCount: 20, scopes: ["nonMelLoans"])
+    loanRequests(addressOfRecord: ID): Loan @paginate(builder: "App\\Services\\SearchService@loanSearch", defaultCount: 20, scopes: ["loanRequests"])
+
+    loanSearch(filter: LoanFilterInput!): Loan @paginate(builder: "App\\Services\\SearchService@loanAdvSearch", defaultCount: 20, scopes: ["melLoans"])
+    nonMelLoanSearch(filter: LoanFilterInput!): Loan @paginate(builder: "App\\Services\\SearchService@loanAdvSearch", defaultCount: 20, scopes: ["nonMelLoans"])
+
+    loanPreparationsByLoan(loanID: ID!): LoanPreparation @paginate(builder: "App\\Services\\SearchService@loanPreparationsByLoan", defaultCount: 20)
+
+    referenceWork(referenceWorkID: ID @eq): ReferenceWork @find
+
+    taxon(taxonID: ID @eq): Taxon @find
+
+    pickList(pickListID: ID! @eq): PickList @find
 }
 
-"Account of a person who utilizes this application."
+
+extend type Mutation @guard(with: "api") {
+  createLoanAgent(input: CreateLoanAgentInput! @spread): LoanAgent @create
+  deleteLoanAgent(loanAgentID: ID!): LoanAgent @delete
+  createLoanReturnPreparation(input: CreateLoanReturnPreparationInput! @spread): LoanReturnPreparation @create
+  updateLoanReturnPreparation(input: UpdateLoanReturnPreparationInput! @spread): LoanReturnPreparation @update
+  deleteLoanReturnPreparation(loanReturnPreparationID: ID!): LoanReturnPreparation @delete
+}
+
 type User {
-    "Unique primary key."
     id: ID!
-
-    "Non-unique name."
     name: String!
-
-    "Unique email address."
     email: String!
-
-    "When the email was verified."
-    email_verified_at: DateTime
-
-    "When the account was created."
     created_at: DateTime!
-
-    "When the account was last updated."
     updated_at: DateTime!
 }

@@ -1,0 +1,10 @@
+input CreateAgentVariantInput {
+  country: String
+  language: String
+  name: String
+  varType: AgentVariantEnum
+  variant: String
+  modifiedByAgentID: Int
+  createdByAgentID: Int
+  agentID: Int!
+}

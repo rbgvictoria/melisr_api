@@ -1,0 +1,12 @@
+input DisposalPreparationFilterInput {
+  disposalPreparationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  quantity: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  preparation: PreparationFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  loanReturnPreparation: LoanReturnPreparationFilterInput
+}

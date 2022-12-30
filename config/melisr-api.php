@@ -269,6 +269,16 @@ return [
         'taxontreedef',
         'taxontreedefitem',
         'treatmentevent',
-        'treatmenteventattachment'
+        'treatmenteventattachment',
+        'collectionobjectattr',
+        'preparationattr',
+        'disposalpreparation',
+        'determiner',
+        'exchangeoutattachment',
+        'exchangeinattachment',
+        'disposal',
+        'disposalattachment',
+        'deaccessionattachment',
+        'disposalagent',
     ],
 ];

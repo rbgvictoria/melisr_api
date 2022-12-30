@@ -1,0 +1,13 @@
+input UpdateLoanPreparationInput {
+  loanPreparationID: ID!
+  descriptionOfMaterial: String
+  inComments: String
+  isResolved: Boolean
+  outComments: String
+  quantity: Int
+  quantityResolved: Int
+  quantityReturned: Int
+  receivedComments: String
+  preparation: CreatePreparationBelongsTo
+  loan: CreateLoanBelongsTo
+}

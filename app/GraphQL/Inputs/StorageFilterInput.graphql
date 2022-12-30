@@ -24,8 +24,8 @@ input StorageFilterInput {
   parent: StorageFilterInput
   preparations: PreparationFilterInput
   preparations: PreparationFilterInput
-  storages: StorageFilterInput
-  storages: StorageFilterInput
-  containers: ContainerFilterInput
+  synonyms: StorageFilterInput
+  children: StorageFilterInput
+#   containers: ContainerFilterInput
   storageAttachments: StorageAttachmentFilterInput
 }

@@ -1,0 +1,12 @@
+input CreateLoanPreparationInput {
+  descriptionOfMaterial: String @rename(attribute: "DescriptionOfMaterial")
+  inComments: String @rename(attribute: "InComments")
+  isResolved: Boolean @rename(attribute: "IsResolved")
+  outComments: String @rename(attribute: "OutComments")
+  quantity: Int @rename(attribute: "Quantity")
+  quantityResolved: Int @rename(attribute: "QuantityResolved")
+  quantityReturned: Int @rename(attribute: "QuantityReturned")
+  receivedComments: String @rename(attribute: "ReceivedComments")
+  preparation: CreatePreparationBelongsTo
+  loan: CreateLoanBelongsTo
+}

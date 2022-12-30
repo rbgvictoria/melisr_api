@@ -1,0 +1,5 @@
+input CreateAgentBelongsTo {
+  connect: ID
+  create: CreateAgentInput
+  update: UpdateAgentInput
+}

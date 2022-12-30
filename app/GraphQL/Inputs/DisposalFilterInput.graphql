@@ -1,0 +1,23 @@
+input DisposalFilterInput {
+  disposalID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  disposalDate: DateFieldFilterInput
+  disposalNumber: StringFieldFilterInput
+  doNotExport: BooleanFieldFilterInput
+  number1: FloatFieldFilterInput
+  number2: FloatFieldFilterInput
+  remarks: StringFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  type: StringFieldFilterInput
+  yesNo1: BooleanFieldFilterInput
+  yesNo2: BooleanFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  deaccession: DeaccessionFilterInput
+  disposalPreparations: DisposalPreparationFilterInput
+  disposalAgents: DisposalAgentFilterInput
+  disposalAttachments: DisposalAttachmentFilterInput
+}

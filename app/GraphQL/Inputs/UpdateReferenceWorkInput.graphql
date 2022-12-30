@@ -1,0 +1,24 @@
+input UpdateReferenceWorkInput {
+  isPublished: Boolean
+  iSBN: String
+  libraryNumber: String
+  number1: Float
+  number2: Float
+  pages: String
+  placeOfPublication: String
+  publisher: String
+  referenceWorkType: ReferenceWorkTypeEnum
+  remarks: String
+  text1: String
+  text2: String
+  title: String
+  uRL: String
+  volume: String
+  workDate: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  containedRFParentID: CreateReferenceWorkBelongsTo
+  doi: String
+  uri: String
+  journal: CreateJournalBelongsTo
+}
