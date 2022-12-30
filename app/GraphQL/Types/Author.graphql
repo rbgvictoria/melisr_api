@@ -1,0 +1,12 @@
+type Author {
+  authorID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  orderNumber: Int!
+  remarks: String
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  referenceWork: ReferenceWork! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

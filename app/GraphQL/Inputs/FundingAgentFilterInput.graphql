@@ -1,0 +1,15 @@
+input FundingAgentFilterInput {
+  fundingAgentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  isPrimary: BooleanFieldFilterInput
+  orderNumber: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  type: StringFieldFilterInput
+  divisionID: IntegerFieldFilterInput
+  collectingTripID: IntegerFieldFilterInput
+  createdByAgentID: IntegerFieldFilterInput
+  modifiedByAgentID: IntegerFieldFilterInput
+  agentID: IntegerFieldFilterInput
+}

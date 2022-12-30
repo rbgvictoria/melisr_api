@@ -1,0 +1,57 @@
+type CollectingEventAttribute {
+  collectingEventAttributeID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  number1: Float
+  number10: Float
+  number11: Float
+  number12: Float
+  number13: Float
+  number2: Float
+  number3: Float
+  number4: Float
+  number5: Float
+  number6: Float
+  number7: Float
+  number8: Float
+  number9: Float
+  remarks: String
+  text1: String
+  text10: String
+  text11: String
+  text12: String
+  text13: String
+  text14: String
+  text15: String
+  text16: String
+  text17: String
+  text2: String
+  text3: String
+  text4: String
+  text5: String
+  text6: String
+  text7: String
+  text8: String
+  text9: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  integer1: Int
+  integer10: Int
+  integer2: Int
+  integer3: Int
+  integer4: Int
+  integer5: Int
+  integer6: Int
+  integer7: Int
+  integer8: Int
+  integer9: Int
+  hostTaxon: Taxon @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  collectingEvent: CollectingEvent @hasOne
+}

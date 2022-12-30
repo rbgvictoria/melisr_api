@@ -1,0 +1,25 @@
+input ProjectFilterInput {
+  projectID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  endDate: DateFieldFilterInput
+  grantAgency: StringFieldFilterInput
+  grantNumber: StringFieldFilterInput
+  number1: FloatFieldFilterInput
+  number2: FloatFieldFilterInput
+  projectDescription: StringFieldFilterInput
+  projectName: StringFieldFilterInput
+  projectNumber: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  startDate: DateFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  uRL: StringFieldFilterInput
+  yesNo1: BooleanFieldFilterInput
+  yesNo2: BooleanFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  projectAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+}

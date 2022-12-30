@@ -1,0 +1,13 @@
+input LoanAgentFilterInput {
+  loanAgentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  role: StringFieldFilterInput
+  agent: AgentFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  loan: LoanFilterInput
+}

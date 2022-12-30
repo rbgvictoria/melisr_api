@@ -131,6 +131,7 @@ return [
         'bigint' => 'Int',
         'longtext' => 'String',
         'mediumblob' => 'String',
+        'mediumtext' => 'String',
     ],
 
     'searchable_tables' => [

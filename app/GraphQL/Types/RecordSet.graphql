@@ -1,0 +1,20 @@
+type RecordSet {
+  recordSetID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  allPermissionLevel: Int
+  tableID: Int!
+  groupPermissionLevel: Int
+  name: String!
+  ownerPermissionLevel: Int
+  remarks: String
+  type: Int!
+  spPrincipalID: Int
+  infoRequest: InfoRequest @belongsTo
+  specifyUser: SpecifyUser! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  recordSetItems: [RecordSetItem] @hasMany
+}

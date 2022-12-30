@@ -1,0 +1,12 @@
+type TreatmentEventAttachment {
+  treatmentEventAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int!
+  remarks: String
+  treatmentEvent: TreatmentEvent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  attachment: Attachment! @belongsTo
+}

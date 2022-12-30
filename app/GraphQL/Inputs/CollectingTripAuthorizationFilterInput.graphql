@@ -1,0 +1,11 @@
+input CollectingTripAuthorizationFilterInput {
+  collectingTripAuthorizationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  collectingTrip: CollectingTripFilterInput
+  createdByAgent: AgentFilterInput
+  permit: PermitFilterInput
+}

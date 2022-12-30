@@ -1,0 +1,26 @@
+type Project {
+  projectID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  endDate: Date
+  grantAgency: String
+  grantNumber: String
+  number1: Float
+  number2: Float
+  projectDescription: String
+  projectName: String!
+  projectNumber: String
+  remarks: String
+  startDate: Date
+  text1: String
+  text2: String
+  uRL: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  modifiedByAgent: Agent @belongsTo
+  projectAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  collectionObjects: [CollectionObject] @belongsToMany
+}

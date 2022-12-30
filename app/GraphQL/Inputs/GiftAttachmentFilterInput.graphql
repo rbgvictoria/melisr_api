@@ -1,0 +1,12 @@
+input GiftAttachmentFilterInput {
+  giftAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  giftID: IntegerFieldFilterInput
+  modifiedByAgentID: IntegerFieldFilterInput
+  createdByAgentID: IntegerFieldFilterInput
+  attachmentID: IntegerFieldFilterInput
+}

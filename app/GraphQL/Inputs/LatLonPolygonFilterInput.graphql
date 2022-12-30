@@ -1,0 +1,14 @@
+input LatLonPolygonFilterInput {
+  latLonPolygonID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  description: StringFieldFilterInput
+  isPolyline: BooleanFieldFilterInput
+  name: StringFieldFilterInput
+  spVisualQueryID: IntegerFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  locality: LocalityFilterInput
+  latLonPolygonPnts: LatLonPolygonPntFilterInput
+}

@@ -1,0 +1,12 @@
+input LocalityNameAliasFilterInput {
+  localityNameAliasID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  name: StringFieldFilterInput
+  source: StringFieldFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  locality: LocalityFilterInput
+}

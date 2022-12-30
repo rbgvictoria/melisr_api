@@ -1,0 +1,54 @@
+type Determination {
+  determinationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  addendum: String
+  alternateName: String
+  confidence: String
+  determinedDate: Date
+  determinedDatePrecision: Int
+  featureOrBasis: String
+  isCurrent: Boolean!
+  method: String
+  nameUsage: String
+  number1: Float
+  number2: Float
+  qualifier: String
+  varQualifer: String
+  remarks: String
+  subSpQualifier: String
+  text1: String
+  text2: String
+  typeStatusName: String
+  varQualifier: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  gUID: String
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  integer4: Int
+  integer5: Int
+  number3: Float
+  number4: Float
+  number5: Float
+  text3: String
+  text4: String
+  text5: String
+  text6: String
+  text7: String
+  text8: String
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  taxon: Taxon @belongsTo
+  preferredTaxon: Taxon @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+  determiner: Agent @belongsTo
+  determinationCitations: [DeterminationCitation] @hasMany
+  determiners: [Determiner] @hasMany
+}

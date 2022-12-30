@@ -1,0 +1,14 @@
+type BorrowReturnMaterial {
+  borrowReturnMaterialID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  quantity: Int
+  remarks: String
+  returnedDate: Date
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  borrowMaterial: BorrowMaterial! @belongsTo
+  returnedBy: Agent @belongsTo
+}

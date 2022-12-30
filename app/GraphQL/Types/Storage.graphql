@@ -1,0 +1,31 @@
+type Storage {
+  storageID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  abbrev: String
+  fullName: String
+  highestChildNodeNumber: Int
+  isAccepted: Boolean
+  name: String!
+  nodeNumber: Int
+  number1: Int
+  number2: Int
+  rankID: Int!
+  remarks: String
+  text1: String
+  text2: String
+  timestampVersion: DateTime
+  accepted: Storage @belongsTo
+  storageTreeDefItem: StorageTreeDefItem! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  storageTreeDef: StorageTreeDef! @belongsTo
+  createdByAgent: Agent @belongsTo
+  parent: Storage @belongsTo
+  preparations: [Preparation] @hasMany
+  preparations: [Preparation] @hasMany
+  storages: [Storage] @hasMany
+  storages: [Storage] @hasMany
+  containers: [Container] @hasMany
+  storageAttachments: [StorageAttachment] @hasMany
+}

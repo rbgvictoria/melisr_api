@@ -1,0 +1,12 @@
+type LoanAttachment {
+  loanAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  loan: Loan! @belongsTo
+  attachment: Attachment! @belongsTo
+}

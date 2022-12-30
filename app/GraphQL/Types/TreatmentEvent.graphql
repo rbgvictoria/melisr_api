@@ -1,0 +1,39 @@
+type TreatmentEvent {
+  treatmentEventID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  dateBoxed: Date
+  dateCleaned: Date
+  dateCompleted: Date
+  dateReceived: Date
+  dateToIsolation: Date
+  dateTreatmentEnded: Date
+  dateTreatmentStarted: Date
+  fieldNumber: String
+  storage: String
+  remarks: String
+  treatmentNumber: String
+  type: String
+  number1: Int
+  number2: Int
+  number3: Float
+  number4: Float
+  number5: Float
+  text1: String
+  text2: String
+  text3: String
+  text4: String
+  text5: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  accession: Accession @belongsTo
+  performedBy: Agent @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject @belongsTo
+  createdByAgent: Agent @belongsTo
+  authorizedBy: Agent @belongsTo
+  division: Division @belongsTo
+  treatmentEventAttachments: [TreatmentEventAttachment] @hasMany
+}

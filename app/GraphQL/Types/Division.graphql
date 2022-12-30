@@ -1,0 +1,32 @@
+type Division {
+  userGroupScopeId: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  abbrev: String
+  altName: String
+  description: String
+  disciplineType: String
+  divisionId: Int
+  iconURI: String
+  name: String
+  regNumber: String
+  remarks: String
+  uri: String
+  institution: Institution! @belongsTo
+  address: Address @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  agents: [Agent] @hasMany
+  collectors: [Collector] @hasMany
+  accessions: [Accession] @hasMany
+  conservDescriptions: [ConservDescription] @hasMany
+  disciplines: [Discipline] @hasMany
+  groupPersons: [GroupPerson] @hasMany
+  repositoryAgreements: [RepositoryAgreement] @hasMany
+  exchangeOuts: [ExchangeOut] @hasMany
+  gifts: [Gift] @hasMany
+  treatmentEvents: [TreatmentEvent] @hasMany
+  loans: [Loan] @hasMany
+  exchangeIns: [ExchangeIn] @hasMany
+}

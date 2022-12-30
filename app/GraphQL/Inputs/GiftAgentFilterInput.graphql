@@ -1,0 +1,14 @@
+input GiftAgentFilterInput {
+  giftAgentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  role: StringFieldFilterInput
+  date1: DateFieldFilterInput
+  agent: AgentFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  gift: GiftFilterInput
+}

@@ -1,0 +1,5 @@
+type Auth_group_permissions {
+  id: ID!
+  permission: Auth_permission! @belongsTo
+  group: Auth_group! @belongsTo
+}

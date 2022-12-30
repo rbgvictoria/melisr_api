@@ -1,0 +1,11 @@
+type CollectingTripAuthorization {
+  collectingTripAuthorizationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  collectingTrip: CollectingTrip @belongsTo
+  createdByAgent: Agent @belongsTo
+  permit: Permit! @belongsTo
+}

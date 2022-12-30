@@ -1,0 +1,14 @@
+type GeologicTimePeriodTreeDef {
+  geologicTimePeriodTreeDefID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameDirection: Int
+  name: String!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  geologicTimePeriodTreeDefItems: [GeologicTimePeriodTreeDefItem] @hasMany
+  disciplines: [Discipline] @hasMany
+  geologicTimePeriods: [GeologicTimePeriod] @hasMany
+}

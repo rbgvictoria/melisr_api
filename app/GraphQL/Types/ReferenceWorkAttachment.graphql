@@ -1,0 +1,12 @@
+type ReferenceWorkAttachment {
+  referenceWorkAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int!
+  remarks: String
+  attachmentID: Int!
+  createdByAgentID: Int
+  modifiedByAgentID: Int
+  referenceWorkID: Int!
+}

@@ -1,0 +1,29 @@
+type SpecifyUser {
+  specifyUserID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  accumMinLoggedIn: Int
+  eMail: String
+  isLoggedIn: Boolean!
+  isLoggedInReport: Boolean!
+  loginCollectionName: String
+  loginDisciplineName: String
+  loginOutTime: DateTime
+  name: String!
+  password: String!
+  userType: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  agents: [Agent] @hasMany
+  collectingEvents: [CollectingEvent] @hasMany
+  spdatasets: [Spdataset] @hasMany
+  spuserroles: [Spuserrole] @hasMany
+  spuserpolicys: [Spuserpolicy] @hasMany
+  attachments: [Attachment] @hasMany
+  taxa: [Taxon] @hasMany
+  localities: [Locality] @hasMany
+  collectionObjects: [CollectionObject] @hasMany
+  spuserexternalids: [Spuserexternalid] @hasMany
+  recordSets: [RecordSet] @hasMany
+}

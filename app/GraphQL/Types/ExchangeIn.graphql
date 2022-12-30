@@ -1,0 +1,28 @@
+type ExchangeIn {
+  exchangeInID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  descriptionOfMaterial: String
+  exchangeDate: Date
+  number1: Float
+  number2: Float
+  quantityExchanged: Int
+  remarks: String
+  srcGeography: String
+  srcTaxonomy: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  contents: String
+  exchangeInNumber: String
+  catalogedBy: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  division: Division! @belongsTo
+  addressOfRecord: AddressOfRecord @belongsTo
+  receivedFromOrganization: Agent! @belongsTo
+  exchangeInPreps: [ExchangeInPrep] @hasMany
+  exchangeInAttachments: [ExchangeInAttachment] @hasMany
+}

@@ -1,0 +1,40 @@
+type Accession {
+  accessionID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  accessionCondition: String
+  accessionNumber: String!
+  dateAccessioned: Date
+  dateAcknowledged: Date
+  dateReceived: Date
+  number1: Float
+  number2: Float
+  remarks: String
+  status: String
+  text1: String
+  text2: String
+  text3: String
+  totalValue: Float
+  type: String
+  verbatimDate: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  text4: String
+  text5: String
+  repositoryAgreement: RepositoryAgreement @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  division: Division! @belongsTo
+  addressOfRecord: AddressOfRecord @belongsTo
+  accessionAgents: [AccessionAgent] @hasMany
+  accessionAttachments: [AccessionAttachment] @hasMany
+  accessionAuthorizations: [AccessionAuthorization] @hasMany
+  accessionCitations: [AccessionCitation] @hasMany
+  appraisals: [Appraisal] @hasMany
+  treatmentEvents: [TreatmentEvent] @hasMany
+  collectionObjects: [CollectionObject] @hasMany
+}

@@ -1,0 +1,19 @@
+type InfoRequest {
+  infoRequestID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  email: String
+  firstname: String
+  infoReqNumber: String
+  institution: String
+  lastname: String
+  remarks: String
+  replyDate: Date
+  requestDate: Date
+  agent: Agent @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  recordSets: [RecordSet] @hasMany
+}

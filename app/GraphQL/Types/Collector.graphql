@@ -1,0 +1,18 @@
+type Collector {
+  collectorID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  isPrimary: Boolean!
+  orderNumber: Int!
+  remarks: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  division: Division @belongsTo
+  collectingEvent: CollectingEvent! @belongsTo
+}

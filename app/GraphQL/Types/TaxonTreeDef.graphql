@@ -1,0 +1,14 @@
+type TaxonTreeDef {
+  taxonTreeDefID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameDirection: Int
+  name: String!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  disciplines: [Discipline] @hasMany
+  taxonTreeDefItems: [TaxonTreeDefItem] @hasMany
+  taxa: [Taxon] @hasMany
+}

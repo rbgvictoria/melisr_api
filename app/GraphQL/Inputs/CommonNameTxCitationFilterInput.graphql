@@ -1,0 +1,21 @@
+input CommonNameTxCitationFilterInput {
+  commonNameTxCitationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  number1: FloatFieldFilterInput
+  number2: FloatFieldFilterInput
+  remarks: StringFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  yesNo1: BooleanFieldFilterInput
+  yesNo2: BooleanFieldFilterInput
+  figureNumber: StringFieldFilterInput
+  isFigured: BooleanFieldFilterInput
+  pageNumber: StringFieldFilterInput
+  plateNumber: StringFieldFilterInput
+  commonNameTx: CommonNameTxFilterInput
+  modifiedByAgent: AgentFilterInput
+  referenceWork: ReferenceWorkFilterInput
+  createdByAgent: AgentFilterInput
+}

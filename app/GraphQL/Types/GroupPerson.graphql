@@ -1,0 +1,13 @@
+type GroupPerson {
+  groupPersonID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  orderNumber: Int!
+  remarks: String
+  member: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  group: Agent! @belongsTo
+  division: Division! @belongsTo
+}

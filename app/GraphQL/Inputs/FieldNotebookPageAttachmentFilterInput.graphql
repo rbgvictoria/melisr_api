@@ -1,0 +1,12 @@
+input FieldNotebookPageAttachmentFilterInput {
+  fieldNotebookPageAttachmentId: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  fieldNotebookPage: FieldNotebookPageFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

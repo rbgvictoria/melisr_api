@@ -1,0 +1,25 @@
+type LoanPreparation {
+  loanPreparationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  descriptionOfMaterial: String
+  inComments: String
+  isResolved: Boolean!
+  outComments: String
+  quantity: Int
+  quantityResolved: Int
+  quantityReturned: Int
+  receivedComments: String
+  text1: String
+  text2: String
+  text3: String
+  text4: String
+  text5: String
+  preparation: Preparation @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  loan: Loan! @belongsTo
+  loanReturnPreparations: [LoanReturnPreparation] @hasMany
+}

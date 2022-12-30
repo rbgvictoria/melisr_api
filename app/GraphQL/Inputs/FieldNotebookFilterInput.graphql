@@ -1,0 +1,18 @@
+input FieldNotebookFilterInput {
+  fieldNotebookID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  description: StringFieldFilterInput
+  endDate: DateFieldFilterInput
+  storage: StringFieldFilterInput
+  name: StringFieldFilterInput
+  startDate: DateFieldFilterInput
+  agent: AgentFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  collection: CollectionFilterInput
+  fieldNotebookAttachments: FieldNotebookAttachmentFilterInput
+  fieldNotebookPageSets: FieldNotebookPageSetFilterInput
+}

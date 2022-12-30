@@ -1,0 +1,10 @@
+type AttachmentTag {
+  attachmentTagID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  tag: String!
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  attachment: Attachment! @belongsTo
+}

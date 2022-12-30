@@ -1,0 +1,11 @@
+type AttachmentMetadata {
+  attachmentMetadataID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  name: String!
+  value: String!
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  attachment: Attachment @belongsTo
+}

@@ -1,0 +1,12 @@
+input AccessionAuthorizationFilterInput {
+  accessionAuthorizationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  accession: AccessionFilterInput
+  repositoryAgreement: RepositoryAgreementFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  permit: PermitFilterInput
+}

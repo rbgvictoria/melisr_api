@@ -1,0 +1,16 @@
+type LocalityCitation {
+  localityCitationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  remarks: String
+  figureNumber: String
+  isFigured: Boolean
+  pageNumber: String
+  plateNumber: String
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  referenceWork: ReferenceWork! @belongsTo
+  createdByAgent: Agent @belongsTo
+  locality: Locality! @belongsTo
+}

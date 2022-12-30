@@ -1,0 +1,15 @@
+type AccessionCitation {
+  accessionCitationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  figureNumber: String
+  isFigured: Boolean
+  pageNumber: String
+  plateNumber: String
+  remarks: String
+  accession: Accession! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  referenceWork: ReferenceWork! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

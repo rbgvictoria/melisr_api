@@ -1,0 +1,29 @@
+type LithoStrat {
+  lithoStratID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullName: String
+  gUID: String
+  highestChildNodeNumber: Int
+  isAccepted: Boolean
+  name: String!
+  nodeNumber: Int
+  number1: Float
+  number2: Float
+  rankID: Int!
+  remarks: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  modifiedByAgent: Agent @belongsTo
+  lithoStratTreeDef: LithoStratTreeDef! @belongsTo
+  createdByAgent: Agent @belongsTo
+  accepted: LithoStrat @belongsTo
+  parent: LithoStrat @belongsTo
+  lithoStratTreeDefItem: LithoStratTreeDefItem! @belongsTo
+  paleoContexts: [PaleoContext] @hasMany
+  lithoStrats: [LithoStrat] @hasMany
+  lithoStrats: [LithoStrat] @hasMany
+}

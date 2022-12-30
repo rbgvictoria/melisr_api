@@ -1,0 +1,48 @@
+type GeoCoordDetail {
+  geoCoordDetailID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  geoRefAccuracyUnits: String
+  geoRefDetDate: DateTime
+  geoRefDetRef: String
+  geoRefRemarks: String
+  geoRefVerificationStatus: String
+  maxUncertaintyEst: Float
+  maxUncertaintyEstUnit: String
+  uncertaintyPolygon: String
+  errorPolygon: String
+  namedPlaceExtent: Float
+  noGeoRefBecause: String
+  originalCoordSystem: String
+  protocol: String
+  source: String
+  validation: String
+  geoRefAccuracy: Float
+  text1: String
+  text2: String
+  text3: String
+  geoRefCompiledDate: DateTime
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  integer4: Int
+  integer5: Int
+  number1: Float
+  number2: Float
+  number3: Float
+  number4: Float
+  number5: Float
+  text4: String
+  text5: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  agent: Agent @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  compiledBy: Agent @belongsTo
+  locality: Locality @belongsTo
+}

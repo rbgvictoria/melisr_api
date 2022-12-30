@@ -1,0 +1,16 @@
+input JournalFilterInput {
+  journalID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  gUID: StringFieldFilterInput
+  iSSN: StringFieldFilterInput
+  journalAbbreviation: StringFieldFilterInput
+  journalName: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  text1: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  institution: InstitutionFilterInput
+  referenceWorks: ReferenceWorkFilterInput
+}

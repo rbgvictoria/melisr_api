@@ -1,0 +1,21 @@
+input GeographyTreeDefItemFilterInput {
+  geographyTreeDefItemID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  fullNameSeparator: StringFieldFilterInput
+  isEnforced: BooleanFieldFilterInput
+  isInFullName: BooleanFieldFilterInput
+  name: StringFieldFilterInput
+  rankID: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  textAfter: StringFieldFilterInput
+  textBefore: StringFieldFilterInput
+  title: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  parentItem: GeographyTreeDefItemFilterInput
+  geographyTreeDef: GeographyTreeDefFilterInput
+  geographies: GeographyFilterInput
+  geographyTreeDefItems: GeographyTreeDefItemFilterInput
+}

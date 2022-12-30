@@ -1,0 +1,21 @@
+type LithoStratTreeDefItem {
+  lithoStratTreeDefItemID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameSeparator: String
+  isEnforced: Boolean
+  isInFullName: Boolean
+  name: String!
+  rankID: Int!
+  remarks: String
+  textAfter: String
+  textBefore: String
+  title: String
+  modifiedByAgent: Agent @belongsTo
+  lithoStratTreeDef: LithoStratTreeDef! @belongsTo
+  createdByAgent: Agent @belongsTo
+  parentItem: LithoStratTreeDefItem @belongsTo
+  lithoStratTreeDefItems: [LithoStratTreeDefItem] @hasMany
+  lithoStrats: [LithoStrat] @hasMany
+}

@@ -1,0 +1,36 @@
+type Geography {
+  geographyID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  abbrev: String
+  centroidLat: Float
+  centroidLon: Float
+  commonName: String
+  fullName: String
+  geographyCode: String
+  gML: String
+  gUID: String
+  highestChildNodeNumber: Int
+  isAccepted: Boolean
+  isCurrent: Boolean
+  name: String
+  nodeNumber: Int
+  number1: Int
+  number2: Int
+  rankID: Int!
+  remarks: String
+  text1: String
+  text2: String
+  timestampVersion: DateTime
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  parent: Geography @belongsTo
+  geographyTreeDef: GeographyTreeDef! @belongsTo
+  geographyTreeDefItem: GeographyTreeDefItem! @belongsTo
+  accepted: Geography @belongsTo
+  agentGeographies: [AgentGeography] @hasMany
+  geographies: [Geography] @hasMany
+  geographies: [Geography] @hasMany
+  localities: [Locality] @hasMany
+}

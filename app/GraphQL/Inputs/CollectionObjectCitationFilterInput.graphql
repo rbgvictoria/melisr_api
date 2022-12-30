@@ -1,0 +1,16 @@
+input CollectionObjectCitationFilterInput {
+  collectionObjectCitationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  isFigured: BooleanFieldFilterInput
+  remarks: StringFieldFilterInput
+  figureNumber: StringFieldFilterInput
+  pageNumber: StringFieldFilterInput
+  plateNumber: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  referenceWork: ReferenceWorkFilterInput
+  collectionObject: CollectionObjectFilterInput
+  createdByAgent: AgentFilterInput
+}

@@ -1,0 +1,14 @@
+input LithoStratTreeDefFilterInput {
+  lithoStratTreeDefID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  fullNameDirection: IntegerFieldFilterInput
+  name: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  disciplines: DisciplineFilterInput
+  lithoStratTreeDefItems: LithoStratTreeDefItemFilterInput
+  lithoStrats: LithoStratFilterInput
+}

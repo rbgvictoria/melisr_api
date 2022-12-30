@@ -1,0 +1,13 @@
+input AccessionAgentFilterInput {
+  accessionAgentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  role: StringFieldFilterInput
+  agent: AgentFilterInput
+  accession: AccessionFilterInput
+  repositoryAgreement: RepositoryAgreementFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+}

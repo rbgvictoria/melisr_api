@@ -1,0 +1,20 @@
+type BorrowMaterial {
+  borrowMaterialID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  description: String
+  inComments: String
+  materialNumber: String!
+  outComments: String
+  quantity: Int
+  quantityResolved: Int
+  quantityReturned: Int
+  text1: String
+  text2: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  borrow: Borrow! @belongsTo
+  borrowReturnMaterials: [BorrowReturnMaterial] @hasMany
+}

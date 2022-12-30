@@ -1,0 +1,14 @@
+type StorageTreeDef {
+  storageTreeDefID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameDirection: Int
+  name: String!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  institutions: [Institution] @hasMany
+  storages: [Storage] @hasMany
+  storageTreeDefItems: [StorageTreeDefItem] @hasMany
+}

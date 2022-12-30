@@ -1,0 +1,10 @@
+input AttachmentTagFilterInput {
+  attachmentTagID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  tag: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

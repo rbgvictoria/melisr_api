@@ -1,0 +1,19 @@
+input InfoRequestFilterInput {
+  infoRequestID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  email: StringFieldFilterInput
+  firstname: StringFieldFilterInput
+  infoReqNumber: StringFieldFilterInput
+  institution: StringFieldFilterInput
+  lastname: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  replyDate: DateFieldFilterInput
+  requestDate: DateFieldFilterInput
+  agent: AgentFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  recordSets: RecordSetFilterInput
+}

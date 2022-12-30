@@ -1,0 +1,21 @@
+type GeographyTreeDefItem {
+  geographyTreeDefItemID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameSeparator: String
+  isEnforced: Boolean
+  isInFullName: Boolean
+  name: String!
+  rankID: Int!
+  remarks: String
+  textAfter: String
+  textBefore: String
+  title: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  parentItem: GeographyTreeDefItem @belongsTo
+  geographyTreeDef: GeographyTreeDef! @belongsTo
+  geographies: [Geography] @hasMany
+  geographyTreeDefItems: [GeographyTreeDefItem] @hasMany
+}

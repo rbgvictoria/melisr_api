@@ -1,0 +1,28 @@
+type RepositoryAgreement {
+  repositoryAgreementID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  dateReceived: Date
+  endDate: Date
+  number1: Float
+  number2: Float
+  remarks: String
+  repositoryAgreementNumber: String!
+  startDate: Date
+  status: String
+  text1: String
+  text2: String
+  text3: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  division: Division! @belongsTo
+  addressOfRecord: AddressOfRecord @belongsTo
+  accessionAgents: [AccessionAgent] @hasMany
+  accessionAuthorizations: [AccessionAuthorization] @hasMany
+  accessions: [Accession] @hasMany
+  repositoryAgreementAttachments: [RepositoryAgreementAttachment] @hasMany
+}

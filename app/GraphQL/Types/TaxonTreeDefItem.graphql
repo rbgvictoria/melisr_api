@@ -1,0 +1,22 @@
+type TaxonTreeDefItem {
+  taxonTreeDefItemID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  formatToken: String
+  fullNameSeparator: String
+  isEnforced: Boolean
+  isInFullName: Boolean
+  name: String!
+  rankID: Int!
+  remarks: String
+  textAfter: String
+  textBefore: String
+  title: String
+  modifiedByAgent: Agent @belongsTo
+  parentItem: TaxonTreeDefItem @belongsTo
+  createdByAgent: Agent @belongsTo
+  taxonTreeDef: TaxonTreeDef! @belongsTo
+  taxonTreeDefItems: [TaxonTreeDefItem] @hasMany
+  taxa: [Taxon] @hasMany
+}

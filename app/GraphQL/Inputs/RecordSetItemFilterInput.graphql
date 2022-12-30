@@ -1,0 +1,6 @@
+input RecordSetItemFilterInput {
+  recordSetItemID: IntegerFieldFilterInput
+  recordId: IntegerFieldFilterInput
+  orderNumber: IntegerFieldFilterInput
+  recordSet: RecordSetFilterInput
+}

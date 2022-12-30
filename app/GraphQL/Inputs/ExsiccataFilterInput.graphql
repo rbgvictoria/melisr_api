@@ -1,0 +1,13 @@
+input ExsiccataFilterInput {
+  exsiccataID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  title: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  schedae: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  referenceWork: ReferenceWorkFilterInput
+  createdByAgent: AgentFilterInput
+  exsiccataItems: ExsiccataItemFilterInput
+}

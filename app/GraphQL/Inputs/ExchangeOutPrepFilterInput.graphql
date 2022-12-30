@@ -1,0 +1,17 @@
+input ExchangeOutPrepFilterInput {
+  exchangeOutPrepID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  comments: StringFieldFilterInput
+  descriptionOfMaterial: StringFieldFilterInput
+  number1: IntegerFieldFilterInput
+  quantity: IntegerFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  preparation: PreparationFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  exchangeOut: ExchangeOutFilterInput
+}

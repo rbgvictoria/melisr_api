@@ -1,0 +1,14 @@
+input GeographyTreeDefFilterInput {
+  geographyTreeDefID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  fullNameDirection: IntegerFieldFilterInput
+  name: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  disciplines: DisciplineFilterInput
+  geographies: GeographyFilterInput
+  geographyTreeDefItems: GeographyTreeDefItemFilterInput
+}

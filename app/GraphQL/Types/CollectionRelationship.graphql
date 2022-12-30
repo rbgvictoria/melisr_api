@@ -1,0 +1,13 @@
+type CollectionRelationship {
+  collectionRelationshipID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  text1: String
+  text2: String
+  modifiedByAgent: Agent @belongsTo
+  collectionRelType: CollectionRelType @belongsTo
+  createdByAgent: Agent @belongsTo
+  leftSideCollection: CollectionObject! @belongsTo
+  rightSideCollection: CollectionObject! @belongsTo
+}

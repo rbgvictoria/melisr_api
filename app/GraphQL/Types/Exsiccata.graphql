@@ -1,0 +1,13 @@
+type Exsiccata {
+  exsiccataID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  title: String!
+  remarks: String
+  schedae: String
+  modifiedByAgent: Agent @belongsTo
+  referenceWork: ReferenceWork! @belongsTo
+  createdByAgent: Agent @belongsTo
+  exsiccataItems: [ExsiccataItem] @hasMany
+}

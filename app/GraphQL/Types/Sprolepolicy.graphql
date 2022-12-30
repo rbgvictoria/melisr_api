@@ -1,0 +1,6 @@
+type Sprolepolicy {
+  id: ID!
+  resource: String!
+  action: String!
+  role: Sprole! @belongsTo
+}

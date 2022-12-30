@@ -1,0 +1,13 @@
+input PrepTypeFilterInput {
+  prepTypeID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  isLoanable: BooleanFieldFilterInput
+  name: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  collection: CollectionFilterInput
+  attributeDefs: AttributeDefFilterInput
+  preparations: PreparationFilterInput
+}

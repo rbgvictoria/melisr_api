@@ -1,0 +1,20 @@
+input BorrowMaterialFilterInput {
+  borrowMaterialID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  description: StringFieldFilterInput
+  inComments: StringFieldFilterInput
+  materialNumber: StringFieldFilterInput
+  outComments: StringFieldFilterInput
+  quantity: IntegerFieldFilterInput
+  quantityResolved: IntegerFieldFilterInput
+  quantityReturned: IntegerFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  borrow: BorrowFilterInput
+  borrowReturnMaterials: BorrowReturnMaterialFilterInput
+}

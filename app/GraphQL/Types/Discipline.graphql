@@ -1,0 +1,43 @@
+type Discipline {
+  userGroupScopeId: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  disciplineId: Int
+  name: String
+  regNumber: String
+  type: String
+  isPaleoContextEmbedded: Boolean
+  paleoContextChildTable: String
+  lithoStratTreeDef: LithoStratTreeDef @belongsTo
+  division: Division! @belongsTo
+  geologicTimePeriodTreeDef: GeologicTimePeriodTreeDef! @belongsTo
+  geographyTreeDef: GeographyTreeDef! @belongsTo
+  dataType: DataType! @belongsTo
+  taxonTreeDef: TaxonTreeDef @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  attributeDefs: [AttributeDef] @hasMany
+  collectingEvents: [CollectingEvent] @hasMany
+  collectingTripAttributes: [CollectingTripAttribute] @hasMany
+  collections: [Collection] @hasMany
+  exchangeInPreps: [ExchangeInPrep] @hasMany
+  exchangeOutPreps: [ExchangeOutPrep] @hasMany
+  fieldNotebooks: [FieldNotebook] @hasMany
+  fieldNotebookPages: [FieldNotebookPage] @hasMany
+  fieldNotebookPageSets: [FieldNotebookPageSet] @hasMany
+  giftAgents: [GiftAgent] @hasMany
+  giftPreparations: [GiftPreparation] @hasMany
+  paleoContexts: [PaleoContext] @hasMany
+  collectingTrips: [CollectingTrip] @hasMany
+  loanAgents: [LoanAgent] @hasMany
+  loanPreparations: [LoanPreparation] @hasMany
+  loanReturnPreparations: [LoanReturnPreparation] @hasMany
+  localityCitations: [LocalityCitation] @hasMany
+  collectingEventAttributes: [CollectingEventAttribute] @hasMany
+  localityNameAliass: [LocalityNameAlias] @hasMany
+  shipments: [Shipment] @hasMany
+  gifts: [Gift] @hasMany
+  localities: [Locality] @hasMany
+  loans: [Loan] @hasMany
+}

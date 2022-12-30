@@ -1,0 +1,14 @@
+type AgentVariant {
+  agentVariantID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  country: String
+  language: String
+  name: String
+  varType: Int!
+  variant: String
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+}

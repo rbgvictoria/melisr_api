@@ -1,0 +1,12 @@
+input ReferenceWorkAttachmentFilterInput {
+  referenceWorkAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  attachmentID: IntegerFieldFilterInput
+  createdByAgentID: IntegerFieldFilterInput
+  modifiedByAgentID: IntegerFieldFilterInput
+  referenceWorkID: IntegerFieldFilterInput
+}

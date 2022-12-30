@@ -1,0 +1,17 @@
+input LoanReturnPreparationFilterInput {
+  loanReturnPreparationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  quantityResolved: IntegerFieldFilterInput
+  quantityReturned: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  returnedDate: DateFieldFilterInput
+  deaccessionPreparationID: IntegerFieldFilterInput
+  receivedBy: AgentFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  loanPreparation: LoanPreparationFilterInput
+  disposalPreparations: DisposalPreparationFilterInput
+}

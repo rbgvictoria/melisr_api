@@ -1,0 +1,27 @@
+type VoucherRelationship {
+  voucherRelationshipID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  collectionCode: String
+  institutionCode: String
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  number1: Float
+  number2: Float
+  number3: Float
+  remarks: String
+  text1: String
+  text2: String
+  text3: String
+  urlLink: String
+  voucherNumber: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

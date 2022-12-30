@@ -1,0 +1,38 @@
+type Permit {
+  permitID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  endDate: Date
+  issuedDate: Date
+  number1: Float
+  number2: Float
+  permitNumber: String!
+  remarks: String
+  renewalDate: Date
+  startDate: Date
+  text1: String
+  text2: String
+  type: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  copyright: String
+  isAvailable: Boolean
+  isRequired: Boolean
+  permitText: String
+  reservedInteger1: Int
+  reservedInteger2: Int
+  reservedText3: String
+  reservedText4: String
+  status: String
+  statusQualifier: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  institution: Institution! @belongsTo
+  issuedBy: Agent @belongsTo
+  issuedTo: Agent @belongsTo
+  accessionAuthorizations: [AccessionAuthorization] @hasMany
+  collectingTripAuthorizations: [CollectingTripAuthorization] @hasMany
+  collectingEventAuthorizations: [CollectingEventAuthorization] @hasMany
+  permitAttachments: [PermitAttachment] @hasMany
+}

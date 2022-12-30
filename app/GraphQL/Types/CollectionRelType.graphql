@@ -1,0 +1,13 @@
+type CollectionRelType {
+  collectionRelTypeID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  name: String
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  leftSideCollection: Collection @belongsTo
+  rightSideCollection: Collection @belongsTo
+  collectionRelationships: [CollectionRelationship] @hasMany
+}

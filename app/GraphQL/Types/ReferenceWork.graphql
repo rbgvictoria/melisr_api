@@ -1,0 +1,42 @@
+type ReferenceWork {
+  referenceWorkID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  gUID: String
+  isPublished: Boolean
+  iSBN: String
+  libraryNumber: String
+  number1: Float
+  number2: Float
+  pages: String
+  placeOfPublication: String
+  publisher: String
+  referenceWorkType: Int!
+  remarks: String
+  text1: String
+  text2: String
+  title: String
+  uRL: String
+  volume: String
+  workDate: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  doi: String
+  uri: String
+  containedRFParent: ReferenceWork @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  journal: Journal @belongsTo
+  createdByAgent: Agent @belongsTo
+  institution: Institution! @belongsTo
+  accessionCitations: [AccessionCitation] @hasMany
+  commonNameTxCitations: [CommonNameTxCitation] @hasMany
+  authors: [Author] @hasMany
+  collectionObjectCitations: [CollectionObjectCitation] @hasMany
+  determinationCitations: [DeterminationCitation] @hasMany
+  exsiccatas: [Exsiccata] @hasMany
+  localityCitations: [LocalityCitation] @hasMany
+  referenceWorks: [ReferenceWork] @hasMany
+  taxonCitations: [TaxonCitation] @hasMany
+  dNASequencingRunCitations: [DNASequencingRunCitation] @hasMany
+}

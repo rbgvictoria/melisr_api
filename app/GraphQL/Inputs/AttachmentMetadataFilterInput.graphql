@@ -1,0 +1,11 @@
+input AttachmentMetadataFilterInput {
+  attachmentMetadataID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  name: StringFieldFilterInput
+  value: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

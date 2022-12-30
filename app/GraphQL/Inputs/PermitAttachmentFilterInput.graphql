@@ -1,0 +1,12 @@
+input PermitAttachmentFilterInput {
+  permitAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  permit: PermitFilterInput
+  attachment: AttachmentFilterInput
+}

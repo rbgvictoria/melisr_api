@@ -1,0 +1,61 @@
+type Locality {
+  localityID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  datum: String
+  elevationAccuracy: Float
+  elevationMethod: String
+  gML: String
+  gUID: String
+  lat1Text: String
+  lat2Text: String
+  latLongAccuracy: Float
+  latLongMethod: String
+  latLongType: String
+  latitude1: Float
+  latitude2: Float
+  localityName: String!
+  long1Text: String
+  long2Text: String
+  longitude1: Float
+  longitude2: Float
+  maxElevation: Float
+  minElevation: Float
+  namedPlace: String
+  originalElevationUnit: String
+  originalLatLongUnit: Int
+  relationToNamedPlace: String
+  remarks: String
+  shortName: String
+  srcLatLongUnit: Int!
+  text1: String
+  text2: String
+  verbatimElevation: String
+  visibility: Int
+  sGRStatus: Int
+  text3: String
+  text4: String
+  text5: String
+  verbatimLatitude: String
+  verbatimLongitude: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  uniqueIdentifier: String
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  visibilitySetBy: SpecifyUser @belongsTo
+  paleoContext: PaleoContext @belongsTo
+  geography: Geography @belongsTo
+  collectingEvents: [CollectingEvent] @hasMany
+  latLonPolygons: [LatLonPolygon] @hasMany
+  localityAttachments: [LocalityAttachment] @hasMany
+  localityCitations: [LocalityCitation] @hasMany
+  localityNameAliass: [LocalityNameAlias] @hasMany
+  localityDetail: LocalityDetail @hasOne
+  geoCoordDetail: GeoCoordDetail @hasOne
+}

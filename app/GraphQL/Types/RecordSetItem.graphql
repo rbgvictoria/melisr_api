@@ -1,0 +1,6 @@
+type RecordSetItem {
+  recordSetItemID: ID!
+  recordId: Int!
+  orderNumber: Int
+  recordSet: RecordSet! @belongsTo
+}

@@ -1,0 +1,5 @@
+type Spuserrole {
+  id: ID!
+  role: Sprole! @belongsTo
+  specifyuser: SpecifyUser! @belongsTo
+}

@@ -1,0 +1,18 @@
+input CollectorFilterInput {
+  collectorID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  isPrimary: BooleanFieldFilterInput
+  orderNumber: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  yesNo1: BooleanFieldFilterInput
+  yesNo2: BooleanFieldFilterInput
+  agent: AgentFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  division: DivisionFilterInput
+  collectingEvent: CollectingEventFilterInput
+}

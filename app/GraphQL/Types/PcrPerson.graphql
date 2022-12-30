@@ -1,0 +1,16 @@
+type PcrPerson {
+  pcrPersonID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  orderNumber: Int!
+  remarks: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  dNASequence: DnaSequence! @belongsTo
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+}

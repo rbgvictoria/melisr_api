@@ -1,0 +1,19 @@
+type Spdataset {
+  id: ID!
+  name: String!
+  columns: String!
+  data: String!
+  uploadplan: String
+  uploaderstatus: String
+  uploadresult: String
+  rowresults: String
+  visualorder: String
+  importedfilename: String
+  remarks: String
+  timestampcreated: DateTime!
+  timestampmodified: DateTime!
+  collection: Collection! @belongsTo
+  createdbyagent: Agent @belongsTo
+  modifiedbyagent: Agent @belongsTo
+  specifyuser: SpecifyUser! @belongsTo
+}

@@ -1,0 +1,29 @@
+type OtherIdentifier {
+  otherIdentifierID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  identifier: String!
+  institution: String
+  remarks: String
+  date1: Date
+  date1Precision: Int
+  date2: Date
+  date2Precision: Int
+  text1: String
+  text2: String
+  text3: String
+  text4: String
+  text5: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+  agent1: Agent @belongsTo
+  agent2: Agent @belongsTo
+}

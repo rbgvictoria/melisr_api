@@ -1,0 +1,14 @@
+input GeologicTimePeriodTreeDefFilterInput {
+  geologicTimePeriodTreeDefID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  fullNameDirection: IntegerFieldFilterInput
+  name: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  geologicTimePeriodTreeDefItems: GeologicTimePeriodTreeDefItemFilterInput
+  disciplines: DisciplineFilterInput
+  geologicTimePeriods: GeologicTimePeriodFilterInput
+}

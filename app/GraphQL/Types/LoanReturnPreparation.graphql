@@ -1,0 +1,17 @@
+type LoanReturnPreparation {
+  loanReturnPreparationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  quantityResolved: Int
+  quantityReturned: Int
+  remarks: String
+  returnedDate: Date
+  deaccessionPreparationID: Int
+  receivedBy: Agent @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  loanPreparation: LoanPreparation! @belongsTo
+  disposalPreparations: [DisposalPreparation] @hasMany
+}

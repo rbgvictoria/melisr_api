@@ -1,0 +1,12 @@
+type TaxonAttachment {
+  taxonAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int!
+  remarks: String
+  taxon: Taxon! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  attachment: Attachment! @belongsTo
+}

@@ -1,0 +1,6 @@
+type Splibraryrolepolicy {
+  id: ID!
+  resource: String!
+  action: String!
+  role: Splibraryrole! @belongsTo
+}

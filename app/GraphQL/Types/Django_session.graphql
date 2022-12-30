@@ -1,0 +1,5 @@
+type Django_session {
+  sessionKey: ID!
+  sessionData: String!
+  expireDate: DateTime!
+}

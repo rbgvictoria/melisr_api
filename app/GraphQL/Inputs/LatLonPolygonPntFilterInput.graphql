@@ -1,0 +1,8 @@
+input LatLonPolygonPntFilterInput {
+  latLonPolygonPntID: IntegerFieldFilterInput
+  elevation: IntegerFieldFilterInput
+  latitude: FloatFieldFilterInput
+  longitude: FloatFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  latLonPolygon: LatLonPolygonFilterInput
+}

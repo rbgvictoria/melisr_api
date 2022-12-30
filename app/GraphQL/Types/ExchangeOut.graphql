@@ -1,0 +1,30 @@
+type ExchangeOut {
+  exchangeOutID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  descriptionOfMaterial: String
+  exchangeDate: Date
+  number1: Float
+  number2: Float
+  quantityExchanged: Int
+  remarks: String
+  srcGeography: String
+  srcTaxonomy: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  contents: String
+  exchangeOutNumber: String!
+  catalogedBy: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  division: Division! @belongsTo
+  sentToOrganization: Agent! @belongsTo
+  deaccession: Deaccession @belongsTo
+  addressOfRecord: AddressOfRecord @belongsTo
+  exchangeOutPreps: [ExchangeOutPrep] @hasMany
+  exchangeOutAttachments: [ExchangeOutAttachment] @hasMany
+  shipments: [Shipment] @hasMany
+}

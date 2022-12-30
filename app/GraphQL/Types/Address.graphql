@@ -1,0 +1,34 @@
+type Address {
+  addressID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  address: String
+  address2: String
+  address3: String
+  address4: String
+  address5: String
+  city: String
+  country: String
+  endDate: Date
+  fax: String
+  isCurrent: Boolean
+  isPrimary: Boolean
+  isShipping: Boolean
+  ordinal: Int
+  phone1: String
+  phone2: String
+  positionHeld: String
+  postalCode: String
+  remarks: String
+  roomOrBuilding: String
+  startDate: Date
+  state: String
+  typeOfAddr: String
+  agent: Agent @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  divisions: [Division] @hasMany
+  institutions: [Institution] @hasMany
+  institutionNetworks: [InstitutionNetwork] @hasMany
+}

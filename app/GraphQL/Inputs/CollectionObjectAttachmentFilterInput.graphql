@@ -1,0 +1,13 @@
+input CollectionObjectAttachmentFilterInput {
+  collectionObjectAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  collectionObject: CollectionObjectFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

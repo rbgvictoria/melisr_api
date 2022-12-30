@@ -1,0 +1,16 @@
+input AppraisalFilterInput {
+  appraisalID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  appraisalDate: DateFieldFilterInput
+  appraisalNumber: StringFieldFilterInput
+  appraisalValue: FloatFieldFilterInput
+  monetaryUnitType: StringFieldFilterInput
+  notes: StringFieldFilterInput
+  agent: AgentFilterInput
+  accession: AccessionFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  collectionObjects: CollectionObjectFilterInput
+}

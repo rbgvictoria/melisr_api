@@ -1,0 +1,26 @@
+type AgentIdentifier {
+  agentIdentifierID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  date1: Date
+  date1Precision: Int
+  date2: Date
+  date2Precision: Int
+  identifier: String!
+  identifierType: String
+  remarks: String
+  text1: String
+  text2: String
+  text3: String
+  text4: String
+  text5: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+}

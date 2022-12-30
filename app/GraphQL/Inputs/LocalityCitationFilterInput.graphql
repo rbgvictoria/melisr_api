@@ -1,0 +1,16 @@
+input LocalityCitationFilterInput {
+  localityCitationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  figureNumber: StringFieldFilterInput
+  isFigured: BooleanFieldFilterInput
+  pageNumber: StringFieldFilterInput
+  plateNumber: StringFieldFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  referenceWork: ReferenceWorkFilterInput
+  createdByAgent: AgentFilterInput
+  locality: LocalityFilterInput
+}

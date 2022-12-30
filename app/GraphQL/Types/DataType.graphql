@@ -1,0 +1,10 @@
+type DataType {
+  dataTypeID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  name: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  disciplines: [Discipline] @hasMany
+}

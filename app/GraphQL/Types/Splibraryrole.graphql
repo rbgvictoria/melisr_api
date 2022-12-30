@@ -1,0 +1,6 @@
+type Splibraryrole {
+  id: ID!
+  name: String!
+  description: String!
+  splibraryrolepolicys: [Splibraryrolepolicy] @hasMany
+}

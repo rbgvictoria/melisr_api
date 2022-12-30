@@ -1,0 +1,16 @@
+type Appraisal {
+  appraisalID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  appraisalDate: Date!
+  appraisalNumber: String!
+  appraisalValue: Float
+  monetaryUnitType: String
+  notes: String
+  agent: Agent! @belongsTo
+  accession: Accession @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  collectionObjects: [CollectionObject] @hasMany
+}

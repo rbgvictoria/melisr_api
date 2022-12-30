@@ -1,0 +1,13 @@
+type BorrowAgent {
+  borrowAgentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  remarks: String
+  role: String!
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  borrow: Borrow! @belongsTo
+}

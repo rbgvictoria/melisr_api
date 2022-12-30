@@ -1,0 +1,56 @@
+type LocalityDetail {
+  localityDetailID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  baseMeridian: String
+  drainage: String
+  startDepth: Float
+  startdepthunit: String
+  startDepthVerbatim: String
+  endDepth: Float
+  enddepthunit: String
+  endDepthVerbatim: String
+  gML: String
+  hucCode: String
+  island: String
+  islandGroup: String
+  mgrsZone: String
+  nationalParkName: String
+  number1: Float
+  number2: Float
+  rangeDesc: String
+  rangeDirection: String
+  section: String
+  sectionPart: String
+  text1: String
+  text2: String
+  township: String
+  townshipDirection: String
+  utmDatum: String
+  utmEasting: Float
+  utmFalseEasting: Int
+  utmFalseNorthing: Int
+  utmNorthing: Float
+  utmOrigLatitude: Float
+  utmOrigLongitude: Float
+  utmScale: Float
+  utmZone: Int
+  waterBody: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  number3: Float
+  number4: Float
+  number5: Float
+  paleoLat: String
+  paleoLng: String
+  text3: String
+  text4: String
+  text5: String
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  locality: Locality @belongsTo
+}

@@ -1,0 +1,8 @@
+type Sprole {
+  id: ID!
+  name: String!
+  description: String!
+  collection: Collection! @belongsTo
+  spuserroles: [Spuserrole] @hasMany
+  sprolepolicys: [Sprolepolicy] @hasMany
+}

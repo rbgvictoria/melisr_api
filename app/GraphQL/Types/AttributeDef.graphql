@@ -1,0 +1,16 @@
+type AttributeDef {
+  attributeDefID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  dataType: Int
+  fieldName: String
+  tableType: Int
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  prepType: PrepType @belongsTo
+  createdByAgent: Agent @belongsTo
+  collectingEventAttributes: [CollectingEventAttribute] @hasMany
+  collectionObjectAttrs: [CollectionObjectAttr] @hasMany
+  preparationAttrs: [PreparationAttr] @hasMany
+}

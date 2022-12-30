@@ -1,0 +1,14 @@
+type LatLonPolygon {
+  latLonPolygonID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  description: String
+  isPolyline: Boolean!
+  name: String!
+  spVisualQueryID: Int
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  locality: Locality @belongsTo
+  latLonPolygonPnts: [LatLonPolygonPnt] @hasMany
+}

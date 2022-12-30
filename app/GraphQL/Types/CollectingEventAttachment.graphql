@@ -1,0 +1,13 @@
+type CollectingEventAttachment {
+  collectingEventAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  ordinal: Int!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  collectingEvent: CollectingEvent! @belongsTo
+  attachment: Attachment! @belongsTo
+}

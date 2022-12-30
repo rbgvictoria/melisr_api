@@ -1,0 +1,14 @@
+input BorrowReturnMaterialFilterInput {
+  borrowReturnMaterialID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  quantity: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  returnedDate: DateFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  borrowMaterial: BorrowMaterialFilterInput
+  returnedBy: AgentFilterInput
+}

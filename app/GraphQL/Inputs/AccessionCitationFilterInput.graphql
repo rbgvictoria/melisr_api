@@ -1,0 +1,15 @@
+input AccessionCitationFilterInput {
+  accessionCitationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  figureNumber: StringFieldFilterInput
+  isFigured: BooleanFieldFilterInput
+  pageNumber: StringFieldFilterInput
+  plateNumber: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  accession: AccessionFilterInput
+  modifiedByAgent: AgentFilterInput
+  referenceWork: ReferenceWorkFilterInput
+  createdByAgent: AgentFilterInput
+}

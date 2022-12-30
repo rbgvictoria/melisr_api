@@ -1,0 +1,108 @@
+type Taxon {
+  taxonID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  author: String
+  citesStatus: String
+  cOLStatus: String
+  commonName: String
+  cultivarName: String
+  environmentalProtectionStatus: String
+  esaStatus: String
+  fullName: String
+  groupNumber: String
+  gUID: String
+  highestChildNodeNumber: Int
+  isAccepted: Boolean
+  isHybrid: Boolean
+  isisNumber: String
+  labelFormat: String
+  name: String!
+  ncbiTaxonNumber: String
+  nodeNumber: Int
+  number1: Int
+  number2: Int
+  rankID: Int!
+  remarks: String
+  source: String
+  taxonomicSerialNumber: String
+  text1: String
+  text2: String
+  unitInd1: String
+  unitInd2: String
+  unitInd3: String
+  unitInd4: String
+  unitName1: String
+  unitName2: String
+  unitName3: String
+  unitName4: String
+  usfwsCode: String
+  visibility: Int
+  number3: Float
+  number4: Float
+  number5: Float
+  text3: String
+  text4: String
+  text5: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  integer4: Int
+  integer5: Int
+  text10: String
+  text11: String
+  text12: String
+  text13: String
+  text14: String
+  text15: String
+  text16: String
+  text17: String
+  text18: String
+  text19: String
+  text20: String
+  text6: String
+  text7: String
+  text8: String
+  text9: String
+  yesNo10: Boolean
+  yesNo11: Boolean
+  yesNo12: Boolean
+  yesNo13: Boolean
+  yesNo14: Boolean
+  yesNo15: Boolean
+  yesNo16: Boolean
+  yesNo17: Boolean
+  yesNo18: Boolean
+  yesNo19: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  yesNo6: Boolean
+  yesNo7: Boolean
+  yesNo8: Boolean
+  yesNo9: Boolean
+  lSID: String
+  accepted: Taxon @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  hybridParent1: Taxon @belongsTo
+  hybridParent2: Taxon @belongsTo
+  createdByAgent: Agent @belongsTo
+  visibilitySetBy: SpecifyUser @belongsTo
+  taxonAttribute: TaxonAttribute @belongsTo
+  taxonTreeDefItem: TaxonTreeDefItem! @belongsTo
+  parent: Taxon @belongsTo
+  taxonTreeDef: TaxonTreeDef! @belongsTo
+  commonNameTxs: [CommonNameTx] @hasMany
+  collectingEventAttributes: [CollectingEventAttribute] @hasMany
+  taxonAttachments: [TaxonAttachment] @hasMany
+  taxonCitations: [TaxonCitation] @hasMany
+  taxa: [Taxon] @hasMany
+  taxa: [Taxon] @hasMany
+  taxa: [Taxon] @hasMany
+  taxa: [Taxon] @hasMany
+  determinations: [Determination] @hasMany
+  children: [Taxon] @hasMany
+}

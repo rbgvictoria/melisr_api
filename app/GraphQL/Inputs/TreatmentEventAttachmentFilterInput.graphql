@@ -1,0 +1,12 @@
+input TreatmentEventAttachmentFilterInput {
+  treatmentEventAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  treatmentEvent: TreatmentEventFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

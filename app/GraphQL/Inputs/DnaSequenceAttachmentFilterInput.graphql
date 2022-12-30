@@ -1,0 +1,12 @@
+input DnaSequenceAttachmentFilterInput {
+  dnaSequenceAttachmentId: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  dnaSequence: DnaSequenceFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

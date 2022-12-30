@@ -1,0 +1,25 @@
+input LoanPreparationFilterInput {
+  loanPreparationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  descriptionOfMaterial: StringFieldFilterInput
+  inComments: StringFieldFilterInput
+  isResolved: BooleanFieldFilterInput
+  outComments: StringFieldFilterInput
+  quantity: IntegerFieldFilterInput
+  quantityResolved: IntegerFieldFilterInput
+  quantityReturned: IntegerFieldFilterInput
+  receivedComments: StringFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  text3: StringFieldFilterInput
+  text4: StringFieldFilterInput
+  text5: StringFieldFilterInput
+  preparation: PreparationFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  loan: LoanFilterInput
+  loanReturnPreparations: LoanReturnPreparationFilterInput
+}

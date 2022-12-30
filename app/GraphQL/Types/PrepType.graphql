@@ -1,0 +1,13 @@
+type PrepType {
+  prepTypeID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  isLoanable: Boolean!
+  name: String!
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  collection: Collection! @belongsTo
+  attributeDefs: [AttributeDef] @hasMany
+  preparations: [Preparation] @hasMany
+}

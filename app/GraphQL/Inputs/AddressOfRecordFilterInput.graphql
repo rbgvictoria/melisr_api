@@ -1,0 +1,23 @@
+input AddressOfRecordFilterInput {
+  addressOfRecordID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  address: StringFieldFilterInput
+  address2: StringFieldFilterInput
+  city: StringFieldFilterInput
+  country: StringFieldFilterInput
+  postalCode: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  state: StringFieldFilterInput
+  agent: AgentFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  borrows: BorrowFilterInput
+  accessions: AccessionFilterInput
+  repositoryAgreements: RepositoryAgreementFilterInput
+  exchangeOuts: ExchangeOutFilterInput
+  gifts: GiftFilterInput
+  loans: LoanFilterInput
+  exchangeIns: ExchangeInFilterInput
+}

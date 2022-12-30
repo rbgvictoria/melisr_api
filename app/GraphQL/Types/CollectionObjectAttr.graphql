@@ -1,0 +1,13 @@
+type CollectionObjectAttr {
+  attrID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  doubleValue: Float
+  strValue: String
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+  attributeDef: AttributeDef! @belongsTo
+}

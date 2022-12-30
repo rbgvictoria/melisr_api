@@ -1,0 +1,12 @@
+input LocalityAttachmentFilterInput {
+  localityAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  locality: LocalityFilterInput
+  attachment: AttachmentFilterInput
+}

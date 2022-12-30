@@ -1,0 +1,13 @@
+input GroupPersonFilterInput {
+  groupPersonID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  orderNumber: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  member: AgentFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  group: AgentFilterInput
+  division: DivisionFilterInput
+}

@@ -1,0 +1,16 @@
+input AttributeDefFilterInput {
+  attributeDefID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  dataType: IntegerFieldFilterInput
+  fieldName: StringFieldFilterInput
+  tableType: IntegerFieldFilterInput
+  discipline: DisciplineFilterInput
+  modifiedByAgent: AgentFilterInput
+  prepType: PrepTypeFilterInput
+  createdByAgent: AgentFilterInput
+  collectingEventAttributes: CollectingEventAttributeFilterInput
+  collectionObjectAttrs: CollectionObjectAttrFilterInput
+  preparationAttrs: PreparationAttrFilterInput
+}

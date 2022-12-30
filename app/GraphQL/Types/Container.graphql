@@ -1,0 +1,18 @@
+type Container {
+  containerID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  description: String
+  name: String
+  number: Int
+  type: Int
+  parent: Container @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  storage: Storage @belongsTo
+  containers: [Container] @hasMany
+  collectionObjects: [CollectionObject] @hasMany
+  collectionObjects: [CollectionObject] @hasMany
+}

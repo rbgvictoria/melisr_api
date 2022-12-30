@@ -1,0 +1,46 @@
+type CollectingTrip {
+  collectingTripID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectingtripname: String
+  endDate: Date
+  endDateVerbatim: String
+  endTime: Int
+  remarks: String
+  sponsor: String
+  startDate: Date
+  startDateVerbatim: String
+  startTime: Int
+  endDatePrecision: Int
+  number1: Int
+  number2: Int
+  startDatePrecision: Int
+  text1: String
+  text2: String
+  text3: String
+  text4: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  cruise: String
+  expedition: String
+  vessel: String
+  date1: Date
+  date1Precision: Int
+  date2: Date
+  date2Precision: Int
+  text5: String
+  text6: String
+  text7: String
+  text8: String
+  text9: String
+  collectingTripAttribute: CollectingTripAttribute @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  agent1: Agent @belongsTo
+  agent2: Agent @belongsTo
+  collectingTripAuthorizations: [CollectingTripAuthorization] @hasMany
+  collectingEvents: [CollectingEvent] @hasMany
+  collectingTripAttachments: [CollectingTripAttachment] @hasMany
+}

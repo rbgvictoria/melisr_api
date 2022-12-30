@@ -1,0 +1,12 @@
+type PickListItem {
+  pickListItemID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int
+  title: String!
+  value: String
+  modifiedByAgent: Agent @belongsTo
+  pickList: PickList! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

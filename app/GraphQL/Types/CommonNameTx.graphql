@@ -1,0 +1,15 @@
+type CommonNameTx {
+  commonNameTxID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  author: String
+  country: String
+  language: String
+  name: String
+  variant: String
+  taxon: Taxon! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  commonNameTxCitations: [CommonNameTxCitation] @hasMany
+}

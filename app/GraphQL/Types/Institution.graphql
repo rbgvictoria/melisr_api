@@ -1,0 +1,44 @@
+type Institution {
+  userGroupScopeId: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  altName: String
+  code: String
+  copyright: String
+  description: String
+  disclaimer: String
+  hasBeenAsked: Boolean
+  iconURI: String
+  institutionId: Int
+  ipr: String
+  isAccessionsGlobal: Boolean!
+  isAnonymous: Boolean
+  isSecurityOn: Boolean!
+  isServerBased: Boolean!
+  isSharingLocalities: Boolean!
+  isSingleGeographyTree: Boolean!
+  license: String
+  lsidAuthority: String
+  name: String
+  regNumber: String
+  remarks: String
+  termsOfUse: String
+  uri: String
+  currentManagedRelVersion: String
+  currentManagedSchemaVersion: String
+  isReleaseManagedGlobally: Boolean
+  minimumPwdLength: Int
+  gUID: String
+  storageTreeDef: StorageTreeDef @belongsTo
+  address: Address @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  agents: [Agent] @hasMany
+  agents: [Agent] @hasMany
+  collections: [Collection] @hasMany
+  divisions: [Division] @hasMany
+  journals: [Journal] @hasMany
+  referenceWorks: [ReferenceWork] @hasMany
+  permits: [Permit] @hasMany
+}

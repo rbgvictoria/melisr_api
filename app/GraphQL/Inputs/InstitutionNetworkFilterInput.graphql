@@ -1,0 +1,23 @@
+input InstitutionNetworkFilterInput {
+  institutionNetworkID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  altName: StringFieldFilterInput
+  code: StringFieldFilterInput
+  copyright: StringFieldFilterInput
+  description: StringFieldFilterInput
+  disclaimer: StringFieldFilterInput
+  iconURI: StringFieldFilterInput
+  ipr: StringFieldFilterInput
+  license: StringFieldFilterInput
+  name: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  termsOfUse: StringFieldFilterInput
+  uri: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  address: AddressFilterInput
+  agents: AgentFilterInput
+  collections: CollectionFilterInput
+}

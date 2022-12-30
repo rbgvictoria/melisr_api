@@ -1,0 +1,31 @@
+type Borrow {
+  borrowID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  currentDueDate: Date
+  dateClosed: Date
+  invoiceNumber: String!
+  isClosed: Boolean
+  isFinancialResponsibility: Boolean
+  number1: Float
+  number2: Float
+  originalDueDate: Date
+  receivedDate: Date
+  remarks: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  borrowDate: Date
+  borrowDatePrecision: Int
+  numberOfItemsBorrowed: Int
+  status: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  addressOfRecord: AddressOfRecord @belongsTo
+  borrowAgents: [BorrowAgent] @hasMany
+  borrowMaterials: [BorrowMaterial] @hasMany
+  shipments: [Shipment] @hasMany
+}

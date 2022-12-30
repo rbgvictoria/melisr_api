@@ -1,0 +1,8 @@
+type Spuserexternalid {
+  id: ID!
+  provider: String!
+  providerid: String!
+  enabled: Int!
+  idtoken: String
+  specifyuser: SpecifyUser! @belongsTo
+}

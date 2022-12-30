@@ -1,0 +1,21 @@
+input StorageTreeDefItemFilterInput {
+  storageTreeDefItemID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  fullNameSeparator: StringFieldFilterInput
+  isEnforced: BooleanFieldFilterInput
+  isInFullName: BooleanFieldFilterInput
+  name: StringFieldFilterInput
+  rankID: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  textAfter: StringFieldFilterInput
+  textBefore: StringFieldFilterInput
+  title: StringFieldFilterInput
+  parentItem: StorageTreeDefItemFilterInput
+  modifiedByAgent: AgentFilterInput
+  storageTreeDef: StorageTreeDefFilterInput
+  createdByAgent: AgentFilterInput
+  storages: StorageFilterInput
+  storageTreeDefItems: StorageTreeDefItemFilterInput
+}

@@ -1,0 +1,23 @@
+type InstitutionNetwork {
+  institutionNetworkID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  altName: String
+  code: String
+  copyright: String
+  description: String
+  disclaimer: String
+  iconURI: String
+  ipr: String
+  license: String
+  name: String
+  remarks: String
+  termsOfUse: String
+  uri: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  address: Address @belongsTo
+  agents: [Agent] @hasMany
+  collections: [Collection] @hasMany
+}

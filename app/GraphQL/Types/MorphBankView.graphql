@@ -1,0 +1,18 @@
+type MorphBankView {
+  morphBankViewID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  developmentState: String
+  form: String
+  imagingPreparationTechnique: String
+  imagingTechnique: String
+  morphBankExternalViewID: Int
+  sex: String
+  specimenPart: String
+  viewAngle: String
+  viewName: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  attachmentImageAttributes: [AttachmentImageAttribute] @hasMany
+}

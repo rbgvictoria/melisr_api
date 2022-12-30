@@ -1,0 +1,7 @@
+type Spuserpolicy {
+  id: ID!
+  resource: String!
+  action: String!
+  collection: Collection @belongsTo
+  specifyuser: SpecifyUser @belongsTo
+}

@@ -1,0 +1,51 @@
+type PreparationAttribute {
+  preparationAttributeID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  attrdate: Date
+  number1: Float
+  number2: Float
+  number3: Float
+  number4: Int
+  number5: Int
+  number6: Int
+  number7: Int
+  number8: Int
+  number9: Int
+  remarks: String
+  text1: String
+  text10: String
+  text11: String
+  text12: String
+  text13: String
+  text14: String
+  text15: String
+  text16: String
+  text17: String
+  text18: String
+  text19: String
+  text2: String
+  text20: String
+  text21: String
+  text22: String
+  text23: String
+  text24: String
+  text25: String
+  text26: String
+  text3: String
+  text4: String
+  text5: String
+  text6: String
+  text7: String
+  text8: String
+  text9: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  preparation: Preparation @hasOne
+}

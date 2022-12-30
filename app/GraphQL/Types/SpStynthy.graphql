@@ -1,0 +1,12 @@
+type SpStynthy {
+  spStynthyID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  metaXML: String
+  updatePeriodDays: Int!
+  lastExported: DateTime
+  collectionID: Int!
+  mappingXML: String
+  key1: String
+  key2: String
+}

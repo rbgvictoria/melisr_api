@@ -1,0 +1,14 @@
+input AgentVariantFilterInput {
+  agentVariantID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  country: StringFieldFilterInput
+  language: StringFieldFilterInput
+  name: StringFieldFilterInput
+  varType: IntegerFieldFilterInput
+  variant: StringFieldFilterInput
+  agent: AgentFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+}

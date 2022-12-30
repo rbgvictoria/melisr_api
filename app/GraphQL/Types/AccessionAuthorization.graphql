@@ -1,0 +1,12 @@
+type AccessionAuthorization {
+  accessionAuthorizationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  remarks: String
+  accession: Accession @belongsTo
+  repositoryAgreement: RepositoryAgreement @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  permit: Permit! @belongsTo
+}

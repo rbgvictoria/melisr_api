@@ -1,0 +1,16 @@
+type DeterminationCitation {
+  determinationCitationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  remarks: String
+  figureNumber: String
+  isFigured: Boolean
+  pageNumber: String
+  plateNumber: String
+  determination: Determination! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  referenceWork: ReferenceWork! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

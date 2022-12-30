@@ -1,0 +1,14 @@
+type GiftAgent {
+  giftAgentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  remarks: String
+  role: String!
+  date1: Date
+  agent: Agent! @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  gift: Gift! @belongsTo
+}

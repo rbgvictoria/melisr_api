@@ -1,0 +1,16 @@
+type Journal {
+  journalID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  gUID: String
+  iSSN: String
+  journalAbbreviation: String
+  journalName: String
+  remarks: String
+  text1: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  institution: Institution! @belongsTo
+  referenceWorks: [ReferenceWork] @hasMany
+}

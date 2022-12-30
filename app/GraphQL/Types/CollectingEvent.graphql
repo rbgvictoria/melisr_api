@@ -1,0 +1,53 @@
+type CollectingEvent {
+  collectingEventID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  endDate: Date
+  endDatePrecision: Int
+  endDateVerbatim: String
+  endTime: Int
+  method: String
+  remarks: String
+  startDate: Date
+  startDatePrecision: Int
+  startDateVerbatim: String
+  startTime: Int
+  stationFieldNumber: String
+  verbatimDate: String
+  verbatimLocality: String
+  visibility: Int
+  sGRStatus: Int
+  gUID: String
+  integer1: Int
+  integer2: Int
+  reservedInteger3: Int
+  reservedInteger4: Int
+  reservedText1: String
+  reservedText2: String
+  text1: String
+  text2: String
+  stationFieldNumberModifier1: String
+  stationFieldNumberModifier2: String
+  stationFieldNumberModifier3: String
+  text3: String
+  text4: String
+  text5: String
+  text6: String
+  text7: String
+  text8: String
+  uniqueIdentifier: String
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  collectingTrip: CollectingTrip @belongsTo
+  createdByAgent: Agent @belongsTo
+  visibilitySetBy: SpecifyUser @belongsTo
+  paleoContext: PaleoContext @belongsTo
+  locality: Locality @belongsTo
+  collectingEventAttribute: CollectingEventAttribute @belongsTo
+  collectors: [Collector] @hasMany
+  collectingEventAttachments: [CollectingEventAttachment] @hasMany
+  collectingEventAttributes: [CollectingEventAttribute] @hasMany
+  collectingEventAuthorizations: [CollectingEventAuthorization] @hasMany
+  collectionObjects: [CollectionObject] @hasMany
+}

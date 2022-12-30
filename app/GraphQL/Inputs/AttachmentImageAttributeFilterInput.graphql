@@ -1,0 +1,26 @@
+input AttachmentImageAttributeFilterInput {
+  attachmentImageAttributeID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  creativeCommons: StringFieldFilterInput
+  height: IntegerFieldFilterInput
+  magnification: FloatFieldFilterInput
+  mBImageID: IntegerFieldFilterInput
+  resolution: FloatFieldFilterInput
+  timestampLastSend: DateTimeFieldFilterInput
+  timestampLastUpdateCheck: DateTimeFieldFilterInput
+  width: IntegerFieldFilterInput
+  imageType: StringFieldFilterInput
+  number1: FloatFieldFilterInput
+  number2: FloatFieldFilterInput
+  remarks: StringFieldFilterInput
+  text1: StringFieldFilterInput
+  text2: StringFieldFilterInput
+  viewDescription: StringFieldFilterInput
+  yesNo1: BooleanFieldFilterInput
+  yesNo2: BooleanFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

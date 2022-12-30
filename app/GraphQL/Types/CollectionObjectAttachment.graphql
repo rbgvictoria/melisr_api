@@ -1,0 +1,13 @@
+type CollectionObjectAttachment {
+  collectionObjectAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  ordinal: Int!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+  attachment: Attachment! @belongsTo
+}

@@ -1,0 +1,11 @@
+type AgentSpecialty {
+  agentSpecialtyID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  orderNumber: Int!
+  specialtyName: String!
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+}

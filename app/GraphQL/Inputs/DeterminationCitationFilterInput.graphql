@@ -1,0 +1,16 @@
+input DeterminationCitationFilterInput {
+  determinationCitationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  figureNumber: StringFieldFilterInput
+  isFigured: BooleanFieldFilterInput
+  pageNumber: StringFieldFilterInput
+  plateNumber: StringFieldFilterInput
+  determination: DeterminationFilterInput
+  modifiedByAgent: AgentFilterInput
+  referenceWork: ReferenceWorkFilterInput
+  createdByAgent: AgentFilterInput
+}

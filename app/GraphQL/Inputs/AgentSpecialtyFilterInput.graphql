@@ -1,0 +1,11 @@
+input AgentSpecialtyFilterInput {
+  agentSpecialtyID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  orderNumber: IntegerFieldFilterInput
+  specialtyName: StringFieldFilterInput
+  agent: AgentFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+}

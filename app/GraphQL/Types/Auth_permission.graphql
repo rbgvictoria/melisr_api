@@ -1,0 +1,7 @@
+type Auth_permission {
+  id: ID!
+  name: String!
+  contentTypeId: Int!
+  codename: String!
+  authGroupPermissionss: [Auth_group_permissions] @hasMany
+}

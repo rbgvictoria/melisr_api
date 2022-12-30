@@ -1,0 +1,16 @@
+type CollectionObjectCitation {
+  collectionObjectCitationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  isFigured: Boolean
+  remarks: String
+  figureNumber: String
+  pageNumber: String
+  plateNumber: String
+  modifiedByAgent: Agent @belongsTo
+  referenceWork: ReferenceWork! @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

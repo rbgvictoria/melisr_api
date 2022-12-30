@@ -1,0 +1,33 @@
+type GeologicTimePeriod {
+  geologicTimePeriodID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  endPeriod: Float
+  endUncertainty: Float
+  fullName: String
+  gUID: String
+  highestChildNodeNumber: Int
+  isAccepted: Boolean
+  isBioStrat: Boolean
+  name: String!
+  nodeNumber: Int
+  rankID: Int!
+  remarks: String
+  standard: String
+  startPeriod: Float
+  startUncertainty: Float
+  text1: String
+  text2: String
+  accepted: GeologicTimePeriod @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  geologicTimePeriodTreeDef: GeologicTimePeriodTreeDef! @belongsTo
+  geologicTimePeriodTreeDefItem: GeologicTimePeriodTreeDefItem! @belongsTo
+  parent: GeologicTimePeriod @belongsTo
+  paleoContexts: [PaleoContext] @hasMany
+  paleoContexts: [PaleoContext] @hasMany
+  paleoContexts: [PaleoContext] @hasMany
+  geologicTimePeriods: [GeologicTimePeriod] @hasMany
+  geologicTimePeriods: [GeologicTimePeriod] @hasMany
+}

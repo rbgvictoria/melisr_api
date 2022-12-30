@@ -1,0 +1,45 @@
+type Collection {
+  userGroupScopeId: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  catalogFormatNumName: String!
+  code: String
+  collectionId: Int
+  collectionName: String
+  collectionType: String
+  dbContentVersion: String
+  description: String
+  developmentStatus: String
+  estimatedSize: Int
+  gUID: String
+  institutionType: String
+  isEmbeddedCollectingEvent: Boolean!
+  isaNumber: String
+  kingdomCoverage: String
+  preservationMethodType: String
+  primaryFocus: String
+  primaryPurpose: String
+  regNumber: String
+  remarks: String
+  scope: String
+  webPortalURI: String
+  webSiteURI: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  discipline: Discipline! @belongsTo
+  adminContact: Agent @belongsTo
+  institutionNetwork: InstitutionNetwork @belongsTo
+  institutionNetwork: Institution @belongsTo
+  agents: [Agent] @hasMany
+  agents: [Agent] @hasMany
+  collectionRelTypes: [CollectionRelType] @hasMany
+  collectionRelTypes: [CollectionRelType] @hasMany
+  spdatasets: [Spdataset] @hasMany
+  fieldNotebooks: [FieldNotebook] @hasMany
+  spuserpolicys: [Spuserpolicy] @hasMany
+  pickLists: [PickList] @hasMany
+  prepTypes: [PrepType] @hasMany
+  sproles: [Sprole] @hasMany
+  collectionObjects: [CollectionObject] @hasMany
+}

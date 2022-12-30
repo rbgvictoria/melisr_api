@@ -1,0 +1,12 @@
+input ConservDescriptionAttachmentFilterInput {
+  conservDescriptionAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  conservDescription: ConservDescriptionFilterInput
+  attachment: AttachmentFilterInput
+}

@@ -1,0 +1,12 @@
+type FieldNotebookPageSetAttachment {
+  fieldNotebookPageSetAttachmentId: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  fieldNotebookPageSet: FieldNotebookPageSet! @belongsTo
+  attachment: Attachment! @belongsTo
+}

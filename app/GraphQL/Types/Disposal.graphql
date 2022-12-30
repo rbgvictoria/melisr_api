@@ -1,0 +1,23 @@
+type Disposal {
+  disposalID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  disposalDate: Date
+  disposalNumber: String!
+  doNotExport: Boolean
+  number1: Float
+  number2: Float
+  remarks: String
+  text1: String
+  text2: String
+  type: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  deaccession: Deaccession @belongsTo
+  disposalPreparations: [DisposalPreparation] @hasMany
+  disposalAgents: [DisposalAgent] @hasMany
+  disposalAttachments: [DisposalAttachment] @hasMany
+}

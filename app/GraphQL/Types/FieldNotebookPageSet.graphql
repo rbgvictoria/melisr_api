@@ -1,0 +1,18 @@
+type FieldNotebookPageSet {
+  fieldNotebookPageSetID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  description: String
+  endDate: Date
+  method: String
+  orderNumber: Int
+  startDate: Date
+  agent: Agent @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  fieldNotebook: FieldNotebook @belongsTo
+  fieldNotebookPages: [FieldNotebookPage] @hasMany
+  fieldNotebookPageSetAttachments: [FieldNotebookPageSetAttachment] @hasMany
+}

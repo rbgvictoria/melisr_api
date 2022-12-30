@@ -1,0 +1,44 @@
+type Loan {
+  loanID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  currentDueDate: Date
+  dateClosed: Date
+  dateReceived: Date
+  isClosed: Boolean
+  isFinancialResponsibility: Boolean
+  loanDate: Date
+  loanNumber: String!
+  number1: Float
+  number2: Float
+  originalDueDate: Date
+  overdueNotiSetDate: Date
+  purposeOfLoan: String
+  receivedComments: String
+  remarks: String
+  specialConditions: String
+  srcGeography: String
+  srcTaxonomy: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  contents: String
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  status: String
+  text3: String
+  text4: String
+  text5: String
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  division: Division @belongsTo
+  addressOfRecord: AddressOfRecord @belongsTo
+  loanAgents: [LoanAgent] @hasMany
+  loanAttachments: [LoanAttachment] @hasMany
+  loanPreparations: [LoanPreparation] @hasMany
+  shipments: [Shipment] @hasMany
+}

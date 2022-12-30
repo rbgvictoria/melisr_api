@@ -1,0 +1,45 @@
+type DnaSequence {
+  dnaSequenceID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  ambiguousResidues: Int
+  bOLDBarcodeID: String
+  bOLDLastUpdateDate: Date
+  bOLDSampleID: String
+  bOLDTranslationMatrix: String
+  compA: Int
+  compC: Int
+  compG: Int
+  compT: Int
+  genBankAccessionNumber: String
+  geneSequence: String
+  moleculeType: String
+  number1: Float
+  number2: Float
+  number3: Float
+  remarks: String
+  targetMarker: String
+  text1: String
+  text2: String
+  text3: String
+  totalResidues: Int
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  extractionDate: Date
+  extractionDatePrecision: Int
+  sequenceDate: Date
+  sequenceDatePrecision: Int
+  agent: Agent @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject @belongsTo
+  createdByAgent: Agent @belongsTo
+  materialSample: MaterialSample @belongsTo
+  extractor: Agent @belongsTo
+  dNASequencingRuns: [DNASequencingRun] @hasMany
+  dnaSequenceAttachments: [DnaSequenceAttachment] @hasMany
+  extractors: [Extractor] @hasMany
+  pcrPersons: [PcrPerson] @hasMany
+}

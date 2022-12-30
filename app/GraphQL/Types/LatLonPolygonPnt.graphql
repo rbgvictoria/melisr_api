@@ -1,0 +1,8 @@
+type LatLonPolygonPnt {
+  latLonPolygonPntID: ID!
+  elevation: Int
+  latitude: Float!
+  longitude: Float!
+  ordinal: Int!
+  latLonPolygon: LatLonPolygon! @belongsTo
+}

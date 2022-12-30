@@ -1,0 +1,13 @@
+input CollectingTripAttachmentFilterInput {
+  collectingTripAttachmentID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  ordinal: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  collectingTrip: CollectingTripFilterInput
+  createdByAgent: AgentFilterInput
+  attachment: AttachmentFilterInput
+}

@@ -1,0 +1,65 @@
+type Preparation {
+  preparationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  countAmt: Int
+  description: String
+  number1: Float
+  number2: Float
+  preparedDate: Date
+  preparedDatePrecision: Int
+  remarks: String
+  sampleNumber: String
+  status: String
+  storageLocation: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  integer1: Int
+  integer2: Int
+  reservedInteger3: Int
+  reservedInteger4: Int
+  gUID: String
+  text3: String
+  text4: String
+  text5: String
+  date1: Date
+  date1Precision: Int
+  date2: Date
+  date2Precision: Int
+  date3: Date
+  date3Precision: Int
+  date4: Date
+  date4Precision: Int
+  text6: String
+  text7: String
+  text8: String
+  text9: String
+  barCode: String
+  text10: String
+  text11: String
+  text12: String
+  text13: String
+  preparationAttribute: PreparationAttribute @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  prepType: PrepType! @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+  storage: Storage @belongsTo
+  alternateStorage: Storage @belongsTo
+  preparedBy: Agent @belongsTo
+  conservDescriptions: [ConservDescription] @hasMany
+  exchangeInPreps: [ExchangeInPrep] @hasMany
+  exchangeOutPreps: [ExchangeOutPrep] @hasMany
+  giftPreparations: [GiftPreparation] @hasMany
+  preparationProperties: [PreparationProperty] @hasMany
+  materialSamples: [MaterialSample] @hasMany
+  loanPreparations: [LoanPreparation] @hasMany
+  preparationAttachments: [PreparationAttachment] @hasMany
+  preparationAttrs: [PreparationAttr] @hasMany
+  disposalPreparations: [DisposalPreparation] @hasMany
+}

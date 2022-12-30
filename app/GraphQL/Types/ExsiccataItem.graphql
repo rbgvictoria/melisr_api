@@ -1,0 +1,12 @@
+type ExsiccataItem {
+  exsiccataItemID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fascicle: String
+  number: String
+  exsiccata: Exsiccata! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  collectionObject: CollectionObject! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

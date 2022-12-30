@@ -1,0 +1,11 @@
+input CollectingEventAuthorizationFilterInput {
+  collectingEventAuthorizationID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  permit: PermitFilterInput
+  collectingEvent: CollectingEventFilterInput
+}

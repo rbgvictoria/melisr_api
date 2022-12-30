@@ -1,0 +1,51 @@
+type Agent {
+  agentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  abbreviation: String
+  agentType: Int!
+  dateOfBirth: Date
+  dateOfBirthPrecision: Int
+  dateOfDeath: Date
+  dateOfDeathPrecision: Int
+  email: String
+  firstName: String
+  gUID: String
+  initials: String
+  interests: String
+  jobTitle: String
+  lastName: String
+  middleInitial: String
+  remarks: String
+  title: String
+  dateType: Int
+  uRL: String
+  suffix: String
+  date1: Date
+  date1Precision: Int
+  date2: Date
+  date2Precision: Int
+  integer1: Int
+  integer2: Int
+  text1: String
+  text2: String
+  verbatimDate1: String
+  verbatimDate2: String
+  text3: String
+  text4: String
+  text5: String
+  collectionCC: Collection @belongsTo
+  collectionTC: Collection @belongsTo
+  specifyUser: SpecifyUser @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  parentOrganization: Agent @belongsTo
+  institutionCC: Institution @belongsTo
+  institutionTC: Institution @belongsTo
+  division: Division @belongsTo
+  agentAttachments: [AgentAttachment] @hasMany
+  agentGeographies: [AgentGeography] @hasMany
+  agentSpecialties: [AgentSpecialty] @hasMany
+  agentVariants: [AgentVariant] @hasMany
+}

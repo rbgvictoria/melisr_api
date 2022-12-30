@@ -1,0 +1,42 @@
+type Deaccession {
+  deaccessionID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  date1: Date
+  date2: Date
+  deaccessionDate: Date
+  deaccessionNumber: String!
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  integer4: Int
+  integer5: Int
+  number1: Float
+  number2: Float
+  number3: Float
+  number4: Float
+  number5: Float
+  remarks: String
+  status: String
+  text1: String
+  text2: String
+  text3: String
+  text4: String
+  text5: String
+  type: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  agent1: Agent @belongsTo
+  agent2: Agent @belongsTo
+  exchangeOuts: [ExchangeOut] @hasMany
+  gifts: [Gift] @hasMany
+  deaccessionAgents: [DeaccessionAgent] @hasMany
+  disposals: [Disposal] @hasMany
+  deaccessionAttachments: [DeaccessionAttachment] @hasMany
+}

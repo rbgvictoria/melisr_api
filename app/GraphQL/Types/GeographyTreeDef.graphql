@@ -1,0 +1,14 @@
+type GeographyTreeDef {
+  geographyTreeDefID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameDirection: Int
+  name: String!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  disciplines: [Discipline] @hasMany
+  geographies: [Geography] @hasMany
+  geographyTreeDefItems: [GeographyTreeDefItem] @hasMany
+}

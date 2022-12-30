@@ -1,0 +1,14 @@
+type LithoStratTreeDef {
+  lithoStratTreeDefID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameDirection: Int
+  name: String!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  disciplines: [Discipline] @hasMany
+  lithoStratTreeDefItems: [LithoStratTreeDefItem] @hasMany
+  lithoStrats: [LithoStrat] @hasMany
+}

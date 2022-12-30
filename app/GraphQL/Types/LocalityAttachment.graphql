@@ -1,0 +1,12 @@
+type LocalityAttachment {
+  localityAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  locality: Locality! @belongsTo
+  attachment: Attachment! @belongsTo
+}

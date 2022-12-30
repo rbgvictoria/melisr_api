@@ -1,0 +1,15 @@
+input CommonNameTxFilterInput {
+  commonNameTxID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  author: StringFieldFilterInput
+  country: StringFieldFilterInput
+  language: StringFieldFilterInput
+  name: StringFieldFilterInput
+  variant: StringFieldFilterInput
+  taxon: TaxonFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  commonNameTxCitations: CommonNameTxCitationFilterInput
+}

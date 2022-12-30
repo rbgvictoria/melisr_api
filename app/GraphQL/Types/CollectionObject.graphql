@@ -1,0 +1,94 @@
+type CollectionObject {
+  collectionObjectID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  altCatalogNumber: String
+  availability: String
+  catalogNumber: String
+  catalogedDate: Date
+  catalogedDatePrecision: Int
+  catalogedDateVerbatim: String
+  countAmt: Int
+  deaccessioned: Boolean
+  description: String
+  fieldNumber: String
+  gUID: String
+  inventoryDate: Date
+  modifier: String
+  name: String
+  notifications: String
+  number1: Float
+  number2: Float
+  objectCondition: String
+  projectNumber: String
+  remarks: String
+  restrictions: String
+  text1: String
+  text2: String
+  totalValue: Float
+  oCR: String
+  visibility: Int
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  yesNo6: Boolean
+  sGRStatus: Int
+  reservedText: String
+  text3: String
+  integer1: Int
+  integer2: Int
+  reservedInteger3: Int
+  reservedInteger4: Int
+  reservedText2: String
+  reservedText3: String
+  date1: Date
+  date1Precision: Int
+  inventoryDatePrecision: Int
+  numberOfDuplicates: Int
+  embargoReason: String
+  embargoReleaseDate: Date
+  embargoReleaseDatePrecision: Int
+  embargoStartDate: Date
+  embargoStartDatePrecision: Int
+  text4: String
+  text5: String
+  text6: String
+  text7: String
+  text8: String
+  uniqueIdentifier: String
+  accession: Accession @belongsTo
+  cataloger: Agent @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  fieldNotebookPage: FieldNotebookPage @belongsTo
+  createdByAgent: Agent @belongsTo
+  visibilitySetBy: SpecifyUser @belongsTo
+  collection: Collection! @belongsTo
+  paleoContext: PaleoContext @belongsTo
+  inventorizedBy: Agent @belongsTo
+  collectionObjectAttribute: CollectionObjectAttribute @belongsTo
+  containerOwner: Container @belongsTo
+  appraisal: Appraisal @belongsTo
+  collectingEvent: CollectingEvent @belongsTo
+  agent1: Agent @belongsTo
+  embargoAuthority: Agent @belongsTo
+  container: Container @belongsTo
+  collectionObjectAttrs: [CollectionObjectAttr] @hasMany
+  collectionObjectProperties: [CollectionObjectProperty] @hasMany
+  collectionObjectCitations: [CollectionObjectCitation] @hasMany
+  collectionObjectAttachments: [CollectionObjectAttachment] @hasMany
+  collectionRelationships: [CollectionRelationship] @hasMany
+  collectionRelationships: [CollectionRelationship] @hasMany
+  conservDescriptions: [ConservDescription] @hasMany
+  dnaSequences: [DnaSequence] @hasMany
+  exsiccataItems: [ExsiccataItem] @hasMany
+  voucherRelationships: [VoucherRelationship] @hasMany
+  otherIdentifiers: [OtherIdentifier] @hasMany
+  preparations: [Preparation] @hasMany
+  treatmentEvents: [TreatmentEvent] @hasMany
+  determinations: [Determination] @hasMany
+  projects: [Project] @belongsToMany
+}

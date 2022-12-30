@@ -1,0 +1,13 @@
+type AccessionAgent {
+  accessionAgentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  remarks: String
+  role: String!
+  agent: Agent! @belongsTo
+  accession: Accession @belongsTo
+  repositoryAgreement: RepositoryAgreement @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+}

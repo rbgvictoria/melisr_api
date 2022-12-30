@@ -1,0 +1,5 @@
+type Auth_group {
+  id: ID!
+  name: String!
+  authGroupPermissionss: [Auth_group_permissions] @hasMany
+}

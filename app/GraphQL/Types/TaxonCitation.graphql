@@ -1,0 +1,21 @@
+type TaxonCitation {
+  taxonCitationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  number1: Float
+  number2: Float
+  remarks: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  figureNumber: String
+  isFigured: Boolean
+  pageNumber: String
+  plateNumber: String
+  taxon: Taxon! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  referenceWork: ReferenceWork! @belongsTo
+  createdByAgent: Agent @belongsTo
+}

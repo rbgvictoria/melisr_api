@@ -1,0 +1,12 @@
+type LocalityNameAlias {
+  localityNameAliasID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  name: String!
+  source: String!
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  locality: Locality! @belongsTo
+}

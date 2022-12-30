@@ -1,0 +1,13 @@
+type DisposalPreparation {
+  disposalPreparationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  quantity: Int
+  remarks: String
+  preparation: Preparation @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  loanReturnPreparation: LoanReturnPreparation @belongsTo
+  disposal: Disposal! @belongsTo
+}

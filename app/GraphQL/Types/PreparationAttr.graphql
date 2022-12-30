@@ -1,0 +1,13 @@
+type PreparationAttr {
+  attrID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  doubleValue: Float
+  strValue: String
+  preparation: Preparation! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  attributeDef: AttributeDef! @belongsTo
+}

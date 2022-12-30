@@ -1,0 +1,27 @@
+type AttachmentImageAttribute {
+  attachmentImageAttributeID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  creativeCommons: String
+  height: Int
+  magnification: Float
+  mBImageID: Int
+  resolution: Float
+  timestampLastSend: DateTime
+  timestampLastUpdateCheck: DateTime
+  width: Int
+  imageType: String
+  number1: Float
+  number2: Float
+  remarks: String
+  text1: String
+  text2: String
+  viewDescription: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  morphBankView: MorphBankView @belongsTo
+  attachment: Attachment @hasOne
+}

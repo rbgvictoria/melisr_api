@@ -1,0 +1,41 @@
+type Gift {
+  giftID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  dateReceived: Date
+  giftDate: Date
+  giftNumber: String!
+  isFinancialResponsibility: Boolean
+  number1: Float
+  number2: Float
+  purposeOfGift: String
+  receivedComments: String
+  remarks: String
+  specialConditions: String
+  srcGeography: String
+  srcTaxonomy: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  contents: String
+  integer1: Int
+  integer2: Int
+  integer3: Int
+  date1: Date
+  date1Precision: Int
+  status: String
+  text3: String
+  text4: String
+  text5: String
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  division: Division @belongsTo
+  deaccession: Deaccession @belongsTo
+  addressOfRecord: AddressOfRecord @belongsTo
+  giftAgents: [GiftAgent] @hasMany
+  giftPreparations: [GiftPreparation] @hasMany
+  shipments: [Shipment] @hasMany
+}

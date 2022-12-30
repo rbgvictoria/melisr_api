@@ -1,0 +1,51 @@
+type MaterialSample {
+  materialSampleID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  gGBNAbsorbanceRatio260230: Float
+  gGBNAbsorbanceRatio260280: Float
+  gGBNRAbsorbanceRatioMethod: String
+  gGBNConcentration: Float
+  gGBNConcentrationUnit: String
+  gGBNMaterialSampleType: String
+  gGBNMedium: String
+  gGBNPurificationMethod: String
+  gGBNQuality: String
+  gGBNQualityCheckDate: Date
+  gGBNQualityRemarks: String
+  gGBNSampleDesignation: String
+  gGBNSampleSize: Float
+  gGBNVolume: Float
+  gGBNVolumeUnit: String
+  gGBNWeight: Float
+  gGBNWeightMethod: String
+  gGBNWeightUnit: String
+  gUID: String
+  integer1: Int
+  integer2: Int
+  number1: Float
+  number2: Float
+  remarks: String
+  reservedInteger3: Int
+  reservedInteger4: Int
+  reservedNumber3: Float
+  reservedNumber4: Float
+  reservedText3: String
+  reservedText4: String
+  sRABioProjectID: String
+  sRABioSampleID: String
+  sRAProjectID: String
+  sRASampleID: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  extractionDate: Date
+  preparation: Preparation! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  extractor: Agent @belongsTo
+  dnaSequences: [DnaSequence] @hasMany
+}

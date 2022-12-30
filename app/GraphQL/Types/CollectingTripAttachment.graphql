@@ -1,0 +1,13 @@
+type CollectingTripAttachment {
+  collectingTripAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  ordinal: Int!
+  remarks: String
+  modifiedByAgent: Agent @belongsTo
+  collectingTrip: CollectingTrip! @belongsTo
+  createdByAgent: Agent @belongsTo
+  attachment: Attachment! @belongsTo
+}

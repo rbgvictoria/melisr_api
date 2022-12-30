@@ -1,0 +1,61 @@
+type Attachment {
+  attachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  attachmentLocation: String
+  copyrightDate: String
+  copyrightHolder: String
+  credit: String
+  dateImaged: String
+  fileCreatedDate: Date
+  license: String
+  mimeType: String
+  origFilename: String!
+  remarks: String
+  title: String
+  tableID: Int
+  scopeID: Int
+  scopeType: Int
+  gUID: String
+  visibility: Int
+  isPublic: Boolean!
+  captureDevice: String
+  licenseLogoUrl: String
+  metadataText: String
+  subjectOrientation: String
+  subtype: String
+  type: String
+  attachmentStorageConfig: String
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  visibilitySetBy: SpecifyUser @belongsTo
+  creator: Agent @belongsTo
+  attachmentImageAttribute: AttachmentImageAttribute @belongsTo
+  accessionAttachments: [AccessionAttachment] @hasMany
+  agentAttachments: [AgentAttachment] @hasMany
+  attachmentMetadatas: [AttachmentMetadata] @hasMany
+  attachmentTags: [AttachmentTag] @hasMany
+  collectingEventAttachments: [CollectingEventAttachment] @hasMany
+  collectingTripAttachments: [CollectingTripAttachment] @hasMany
+  collectionObjectAttachments: [CollectionObjectAttachment] @hasMany
+  conservDescriptionAttachments: [ConservDescriptionAttachment] @hasMany
+  conservEventAttachments: [ConservEventAttachment] @hasMany
+  dnaSequenceAttachments: [DnaSequenceAttachment] @hasMany
+  dnasequencerunattachments: [Dnasequencerunattachment] @hasMany
+  fieldNotebookAttachments: [FieldNotebookAttachment] @hasMany
+  fieldNotebookPageAttachments: [FieldNotebookPageAttachment] @hasMany
+  fieldNotebookPageSetAttachments: [FieldNotebookPageSetAttachment] @hasMany
+  exchangeOutAttachments: [ExchangeOutAttachment] @hasMany
+  loanAttachments: [LoanAttachment] @hasMany
+  localityAttachments: [LocalityAttachment] @hasMany
+  exchangeInAttachments: [ExchangeInAttachment] @hasMany
+  permitAttachments: [PermitAttachment] @hasMany
+  preparationAttachments: [PreparationAttachment] @hasMany
+  repositoryAgreementAttachments: [RepositoryAgreementAttachment] @hasMany
+  storageAttachments: [StorageAttachment] @hasMany
+  taxonAttachments: [TaxonAttachment] @hasMany
+  treatmentEventAttachments: [TreatmentEventAttachment] @hasMany
+  disposalAttachments: [DisposalAttachment] @hasMany
+  deaccessionAttachments: [DeaccessionAttachment] @hasMany
+}

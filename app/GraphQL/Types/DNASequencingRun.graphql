@@ -1,0 +1,46 @@
+type DNASequencingRun {
+  dNASequencingRunID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  collectionMemberID: Int!
+  number1: Float
+  number2: Float
+  number3: Float
+  ordinal: Int
+  pCRCocktailPrimer: Boolean
+  pCRForwardPrimerCode: String
+  pCRPrimerName: String
+  pCRPrimerSequence53: String
+  pCRReversePrimerCode: String
+  readDirection: String
+  remarks: String
+  runDate: Date
+  scoreFileName: String
+  sequenceCocktailPrimer: Boolean
+  sequencePrimerCode: String
+  sequencePrimerName: String
+  sequencePrimerSequence53: String
+  text1: String
+  text2: String
+  text3: String
+  traceFileName: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  yesNo3: Boolean
+  geneSequence: String
+  dryadDOI: String
+  sRAExperimentID: String
+  sRARunID: String
+  sRASubmissionID: String
+  dNASequence: DnaSequence! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  runByAgent: Agent @belongsTo
+  dNAPrimer: DNAPrimer @belongsTo
+  preparedByAgent: Agent @belongsTo
+  preparedByAgent: Agent @belongsTo
+  runByAgent: Agent @belongsTo
+  dnasequencerunattachments: [Dnasequencerunattachment] @hasMany
+  dNASequencingRunCitations: [DNASequencingRunCitation] @hasMany
+}

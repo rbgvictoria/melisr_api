@@ -1,0 +1,12 @@
+type DisposalAgent {
+  disposalAgentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  remarks: String
+  role: String!
+  agent: Agent! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  disposal: Disposal! @belongsTo
+}

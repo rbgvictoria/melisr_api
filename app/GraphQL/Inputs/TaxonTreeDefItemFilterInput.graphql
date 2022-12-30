@@ -1,0 +1,22 @@
+input TaxonTreeDefItemFilterInput {
+  taxonTreeDefItemID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  formatToken: StringFieldFilterInput
+  fullNameSeparator: StringFieldFilterInput
+  isEnforced: BooleanFieldFilterInput
+  isInFullName: BooleanFieldFilterInput
+  name: StringFieldFilterInput
+  rankID: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  textAfter: StringFieldFilterInput
+  textBefore: StringFieldFilterInput
+  title: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  parentItem: TaxonTreeDefItemFilterInput
+  createdByAgent: AgentFilterInput
+  taxonTreeDef: TaxonTreeDefFilterInput
+  taxonTreeDefItems: TaxonTreeDefItemFilterInput
+  taxa: TaxonFilterInput
+}

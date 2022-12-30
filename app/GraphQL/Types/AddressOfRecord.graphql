@@ -1,0 +1,23 @@
+type AddressOfRecord {
+  addressOfRecordID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  address: String
+  address2: String
+  city: String
+  country: String
+  postalCode: String
+  remarks: String
+  state: String
+  agent: Agent @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  borrows: [Borrow] @hasMany
+  accessions: [Accession] @hasMany
+  repositoryAgreements: [RepositoryAgreement] @hasMany
+  exchangeOuts: [ExchangeOut] @hasMany
+  gifts: [Gift] @hasMany
+  loans: [Loan] @hasMany
+  exchangeIns: [ExchangeIn] @hasMany
+}

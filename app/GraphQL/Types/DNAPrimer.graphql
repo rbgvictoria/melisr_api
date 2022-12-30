@@ -1,0 +1,34 @@
+type DNAPrimer {
+  dNAPrimerID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  integer1: Int
+  integer2: Int
+  number1: Float
+  number2: Float
+  primerDesignator: String
+  primerNameForward: String
+  primerNameReverse: String
+  primerReferenceCitationForward: String
+  primerReferenceCitationReverse: String
+  primerReferenceLinkForward: String
+  primerReferenceLinkReverse: String
+  primerSequenceForward: String
+  primerSequenceReverse: String
+  purificationMethod: String
+  remarks: String
+  reservedInteger3: Int
+  reservedInteger4: Int
+  reservedNumber3: Float
+  reservedNumber4: Float
+  reservedText3: String
+  reservedText4: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  dNASequencingRuns: [DNASequencingRun] @hasMany
+}

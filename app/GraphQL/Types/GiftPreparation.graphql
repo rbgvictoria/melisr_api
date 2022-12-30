@@ -1,0 +1,21 @@
+type GiftPreparation {
+  giftPreparationID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  descriptionOfMaterial: String
+  inComments: String
+  outComments: String
+  quantity: Int
+  receivedComments: String
+  text1: String
+  text2: String
+  text3: String
+  text4: String
+  text5: String
+  preparation: Preparation @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  gift: Gift @belongsTo
+}

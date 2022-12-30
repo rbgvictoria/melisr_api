@@ -1,0 +1,33 @@
+type PaleoContext {
+  paleoContextID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  remarks: String
+  text1: String
+  text2: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  number1: Float
+  number2: Float
+  number3: Float
+  number4: Float
+  number5: Float
+  paleoContextName: String
+  text3: String
+  text4: String
+  text5: String
+  yesNo3: Boolean
+  yesNo4: Boolean
+  yesNo5: Boolean
+  chronosStratEnd: GeologicTimePeriod @belongsTo
+  discipline: Discipline @belongsTo
+  chronosStrat: GeologicTimePeriod @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  bioStrat: GeologicTimePeriod @belongsTo
+  lithoStrat: LithoStrat @belongsTo
+  collectingEvents: [CollectingEvent] @hasMany
+  localities: [Locality] @hasMany
+  collectionObjects: [CollectionObject] @hasMany
+}

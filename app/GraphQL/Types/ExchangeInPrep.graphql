@@ -1,0 +1,17 @@
+type ExchangeInPrep {
+  exchangeInPrepID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  comments: String
+  descriptionOfMaterial: String
+  number1: Int
+  quantity: Int
+  text1: String
+  text2: String
+  preparation: Preparation @belongsTo
+  exchangeIn: ExchangeIn @belongsTo
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+}

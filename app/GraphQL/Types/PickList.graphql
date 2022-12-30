@@ -1,0 +1,21 @@
+type PickList {
+  pickListID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fieldName: String
+  filterFieldName: String
+  filterValue: String
+  formatter: String
+  isSystem: Boolean!
+  name: String!
+  readOnly: Boolean!
+  sizeLimit: Int
+  sortType: Int
+  tableName: String
+  type: Int!
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  collection: Collection! @belongsTo
+  pickListItems: [PickListItem] @hasMany
+}

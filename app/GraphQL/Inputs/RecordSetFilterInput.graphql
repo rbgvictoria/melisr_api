@@ -1,0 +1,19 @@
+input RecordSetFilterInput {
+  recordSetID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  collectionMemberID: IntegerFieldFilterInput
+  allPermissionLevel: IntegerFieldFilterInput
+  tableID: IntegerFieldFilterInput
+  groupPermissionLevel: IntegerFieldFilterInput
+  name: StringFieldFilterInput
+  ownerPermissionLevel: IntegerFieldFilterInput
+  remarks: StringFieldFilterInput
+  type: IntegerFieldFilterInput
+  spPrincipalID: IntegerFieldFilterInput
+  infoRequest: InfoRequestFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  recordSetItems: RecordSetItemFilterInput
+}

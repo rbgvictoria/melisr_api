@@ -1,0 +1,21 @@
+type StorageTreeDefItem {
+  storageTreeDefItemID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  fullNameSeparator: String
+  isEnforced: Boolean
+  isInFullName: Boolean
+  name: String!
+  rankID: Int!
+  remarks: String
+  textAfter: String
+  textBefore: String
+  title: String
+  parentItem: StorageTreeDefItem @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  storageTreeDef: StorageTreeDef! @belongsTo
+  createdByAgent: Agent @belongsTo
+  storages: [Storage] @hasMany
+  storageTreeDefItems: [StorageTreeDefItem] @hasMany
+}

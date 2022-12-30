@@ -1,0 +1,14 @@
+input StorageTreeDefFilterInput {
+  storageTreeDefID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  fullNameDirection: IntegerFieldFilterInput
+  name: StringFieldFilterInput
+  remarks: StringFieldFilterInput
+  modifiedByAgent: AgentFilterInput
+  createdByAgent: AgentFilterInput
+  institutions: InstitutionFilterInput
+  storages: StorageFilterInput
+  storageTreeDefItems: StorageTreeDefItemFilterInput
+}

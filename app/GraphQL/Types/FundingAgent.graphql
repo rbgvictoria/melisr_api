@@ -1,0 +1,15 @@
+type FundingAgent {
+  fundingAgentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  isPrimary: Boolean!
+  orderNumber: Int!
+  remarks: String
+  type: String
+  divisionID: Int
+  collectingTripID: Int!
+  createdByAgentID: Int
+  modifiedByAgentID: Int
+  agentID: Int!
+}

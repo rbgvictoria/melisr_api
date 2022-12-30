@@ -1,0 +1,12 @@
+type BorrowAttachment {
+  borrowAttachmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  ordinal: Int!
+  remarks: String
+  attachmentID: Int!
+  createdByAgentID: Int
+  borrowID: Int!
+  modifiedByAgentID: Int
+}

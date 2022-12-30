@@ -1,0 +1,29 @@
+type Shipment {
+  shipmentID: ID!
+  timestampCreated: DateTime!
+  timestampModified: DateTime
+  version: Int
+  insuredForAmount: String
+  number1: Float
+  number2: Float
+  numberOfPackages: Int
+  remarks: String
+  shipmentDate: Date
+  shipmentMethod: String
+  shipmentNumber: String!
+  text1: String
+  text2: String
+  weight: String
+  yesNo1: Boolean
+  yesNo2: Boolean
+  discipline: Discipline! @belongsTo
+  modifiedByAgent: Agent @belongsTo
+  createdByAgent: Agent @belongsTo
+  gift: Gift @belongsTo
+  loan: Loan @belongsTo
+  exchangeOut: ExchangeOut @belongsTo
+  shippedBy: Agent @belongsTo
+  shippedTo: Agent @belongsTo
+  shipper: Agent @belongsTo
+  borrow: Borrow @belongsTo
+}

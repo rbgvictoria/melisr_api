@@ -1,0 +1,12 @@
+input ExsiccataItemFilterInput {
+  exsiccataItemID: IntegerFieldFilterInput
+  timestampCreated: DateTimeFieldFilterInput
+  timestampModified: DateTimeFieldFilterInput
+  version: IntegerFieldFilterInput
+  fascicle: StringFieldFilterInput
+  number: StringFieldFilterInput
+  exsiccata: ExsiccataFilterInput
+  modifiedByAgent: AgentFilterInput
+  collectionObject: CollectionObjectFilterInput
+  createdByAgent: AgentFilterInput
+}
